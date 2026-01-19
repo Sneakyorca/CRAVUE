@@ -1,9 +1,6 @@
-import { useState } from "react";
-
-const Navbar = () => {
-  const [navState, setNavState] = useState("closed");
+const Navbar = ({ navState, setNavState }) => {
   function openNav() {
-    navState === "open" ? setNavState("closed") : setNavState("open");
+    navState === "open" ? setNavState("") : setNavState("open");
   }
   return (
     <nav className={`nav ${navState}`}>
