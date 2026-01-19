@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 const Navbar = ({ navState, setNavState }) => {
   function openNav() {
     navState === "open" ? setNavState("") : setNavState("open");
@@ -13,21 +14,23 @@ const Navbar = ({ navState, setNavState }) => {
         </button>
         <div className="nav-items">
           <li>
-            <a href="">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="">Service</a>
+            <Link to="/services">Service</Link>
           </li>
           <li>
-            <a href="">About</a>
+            <Link to="/about">About</Link>
           </li>
           <li>
-            <a href="">Blog</a>
+            <Link to="/blog">Blog</Link>
           </li>
           <li>
-            <a href="">Contact</a>
+            <Link to="/contact">Contact</Link>
           </li>
-          <button>Get In Touch</button>
+          <button>
+            <Link to="/contact">Get In Touch</Link>
+          </button>
         </div>
       </ul>
     </nav>

@@ -1,6 +1,7 @@
 import ServiceCard from "./components/ServiceCard";
 import Accordion from "./components/Accordion";
 import Carousel from "./components/Carousel";
+import { Link } from "react-router-dom";
 const Home = ({ navState }) => {
   return (
     <>
@@ -14,10 +15,16 @@ const Home = ({ navState }) => {
           offerings, and a strong brand presence.
         </p>
         <div className="nav-links">
-          <a href="" style={{ opacity: navState && 0 }}>
+          <Link
+            to="/contact"
+            className="link"
+            style={{ opacity: navState && 0 }}
+          >
             Sign up
-          </a>
-          <a href="">View Services</a>
+          </Link>
+          <Link to="/services" className="link">
+            View Services
+          </Link>
         </div>
       </section>
       <section id="about">
@@ -32,7 +39,9 @@ const Home = ({ navState }) => {
           marketing and brand positioning problems.
         </p>
         <img src="" alt="" />
-        <a href="">Read more</a>
+        <Link to="/about" className="link">
+          Read more
+        </Link>
       </section>
       <section id="services">
         <p>Our Services</p>
@@ -40,9 +49,15 @@ const Home = ({ navState }) => {
         <p>
           We simplify understanding of our divisions under one unified brand.
         </p>
-        <ServiceCard text="Cravue Studio" />
-        <ServiceCard text="Cravue Brandlab" />
-        <ServiceCard text="Cravue Growth" />
+        <Link to="/services" className="link">
+          <ServiceCard text="Cravue Studio" />
+        </Link>
+        <Link to="/services" className="link">
+          <ServiceCard text="Cravue Brandlab" />
+        </Link>
+        <Link to="/services" className="link">
+          <ServiceCard text="Cravue Growth" />
+        </Link>
       </section>
       <section id="faqs">
         <p>FAQS</p>
@@ -52,11 +67,11 @@ const Home = ({ navState }) => {
       </section>
       <section id="clients">
         <Carousel />
-        <div className="card">
+        <Link to="/contact" className="card">
           <h2>Let CRAVUE do the work so you can scale faster</h2>
           <p>Book a call today</p>
           <button>Book a free call</button>
-        </div>
+        </Link>
       </section>
     </>
   );
