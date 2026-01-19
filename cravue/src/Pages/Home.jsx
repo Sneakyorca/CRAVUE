@@ -4,7 +4,7 @@ import Carousel from "./components/Carousel";
 import { Link } from "react-router-dom";
 const Home = ({ navState }) => {
   return (
-    <>
+    <div className="home">
       <section id="hero">
         <h1>
           Establish brand credibility and clarity for potential clients,
@@ -66,14 +66,16 @@ const Home = ({ navState }) => {
         <Accordion />
       </section>
       <section id="clients">
-        <Carousel />
+        <div className="carousel">
+          <Carousel />
+        </div>
         <Link to="/contact" className="card">
           <h2>Let CRAVUE do the work so you can scale faster</h2>
           <p>Book a call today</p>
           <button>Book a free call</button>
         </Link>
       </section>
-    </>
+    </div>
   );
 };
 
