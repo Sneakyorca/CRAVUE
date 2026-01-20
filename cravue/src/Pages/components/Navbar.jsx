@@ -1,8 +1,9 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 const Navbar = ({ navState, setNavState }) => {
   function openNav() {
     navState === "open" ? setNavState("") : setNavState("open");
   }
+  const location = useLocation();
   return (
     <nav className={`nav ${navState}`}>
       <img src="" alt="" />
@@ -29,7 +30,10 @@ const Navbar = ({ navState, setNavState }) => {
             <Link to="/contact">Contact</Link>
           </li>
           <button>
-            <Link to="/contact">Get In Touch</Link>
+            <Link to="/contact" className="contact-button">
+              {location.pathname === "/" ? "Sign Up" : "Get In Touch"}{" "}
+              <img src="" alt="" />
+            </Link>
           </button>
         </div>
       </ul>
