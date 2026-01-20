@@ -2,6 +2,7 @@ import ServiceCard from "./components/ServiceCard";
 import Accordion from "./components/Accordion";
 import Carousel from "./components/Carousel";
 import { Link } from "react-router-dom";
+import ContactCard from "./components/ContactCard";
 const Home = ({ navState }) => {
   return (
     <div className="home">
@@ -60,7 +61,7 @@ const Home = ({ navState }) => {
         </Link>
       </section>
       <section id="faqs">
-        <p>FAQS</p>
+        <p className="title lg">FAQS</p>
         <h1>We’ve Got the Answers You’re Looking For</h1>
         <p>Quick answers to your questions</p>
         <Accordion />
@@ -69,11 +70,7 @@ const Home = ({ navState }) => {
         <div className="carousel">
           <Carousel />
         </div>
-        <Link to="/contact" className="card">
-          <h2>Let CRAVUE do the work so you can scale faster</h2>
-          <p>Book a call today</p>
-          <button>Book a free call</button>
-        </Link>
+        <ContactCard />
       </section>
     </div>
   );

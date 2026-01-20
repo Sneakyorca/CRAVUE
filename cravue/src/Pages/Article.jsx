@@ -1,5 +1,5 @@
 import { Link, useParams } from "react-router-dom";
-import { blog_content as articles } from "./blog_content";
+import { blog_content as articles } from "./components/blog_content";
 import { useNavigate } from "react-router-dom";
 const Article = () => {
   const navigate = useNavigate();
@@ -29,8 +29,8 @@ const Article = () => {
         Go Back
       </button>
       <div className="info">
-        <span>{article.type}</span>
-        <span>March 11, 2025</span>
+        <span className="title sm">{article.type}</span>
+        <span className="title sm">March 11, 2025</span>
       </div>
       {(article.block ?? []).map((block, idx) => {
         switch (block.type) {
