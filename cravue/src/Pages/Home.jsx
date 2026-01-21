@@ -16,13 +16,14 @@ const Home = ({ navState }) => {
           offerings, and a strong brand presence.
         </p>
         <div className="nav-links">
-          <Link
-            to="/contact"
+          <a
+            href="https://tally.so/r/w77g9A"
+            target="_blank"
             className="link"
             style={{ opacity: navState && 0 }}
           >
             Sign up
-          </Link>
+          </a>
           <Link to="/services" className="link">
             View Services
           </Link>

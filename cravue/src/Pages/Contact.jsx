@@ -22,23 +22,26 @@ const Contact = () => {
       return;
     }
 
-    try {
-      const response = await fetch("https://your-api.vercel.app/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
-      });
+    // try {
+    //   const response = await fetch(
+    //     "https://cravue-server.vercel.app/api/contact",
+    //     {
+    //       method: "POST",
+    //       headers: { "Content-Type": "application/json" },
+    //       body: JSON.stringify(data),
+    //     },
+    //   );
 
-      if (!response.ok) {
-        const result = await response.json().catch(() => ({}));
-        throw new Error(result.error || "Request failed");
-      }
+    //   if (!response.ok) {
+    //     const result = await response.json().catch(() => ({}));
+    //     throw new Error(result.error || "Request failed");
+    //   }
 
-      alert("Form submitted successfully!");
-      form.reset();
-    } catch (err) {
-      alert(err.message || "Failed to submit form");
-    }
+    //   alert("Form submitted successfully!");
+    //   form.reset();
+    // } catch (err) {
+    //   alert(err.message || "Failed to submit form");
+    // }
   };
   return (
     <div className="contact">

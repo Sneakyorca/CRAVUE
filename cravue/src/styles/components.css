@@ -1,0 +1,102 @@
+/* Navbar */
+.nav ul {
+  list-style-type: none;
+}
+.nav a {
+  text-decoration: none;
+}
+.nav .container {
+  display: flex;
+  flex-direction: column;
+  width: 88%;
+  min-width: 380px;
+  border: 2px solid transparent;
+  background:
+    linear-gradient(rgb(4, 28, 52), rgb(4, 28, 52)) padding-box,
+    linear-gradient(45deg, #152d45, #2e6399) border-box;
+  border-radius: 22px;
+  padding: 3px 20px;
+  max-height: 55px;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu img {
+  margin-top: 3px;
+}
+.menu-icon {
+  display: flex;
+  width: 30px;
+  flex-direction: column;
+  gap: 5px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.menu-icon span {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  transition: all 0.3s ease;
+  opacity: 1;
+}
+
+.nav.open .menu-icon span:first-child {
+  transform: rotate(45deg) translateY(11.5px);
+}
+.nav.open .menu-icon span:nth-child(2) {
+  opacity: 0;
+}
+.nav.open .menu-icon span:last-child {
+  transform: rotate(-45deg) translateY(-11.5px);
+}
+.nav-items {
+  list-style-type: none;
+  margin-top: 30px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  max-height: 0;
+  margin-left: 10px;
+}
+.nav-items li {
+  margin-bottom: 20px;
+}
+.nav-items li {
+  margin-bottom: 20px;
+}
+.nav.open .container {
+  max-height: 500px;
+  background:
+    linear-gradient(rgb(21, 45, 69), rgb(21, 45, 69)) padding-box,
+    linear-gradient(45deg, #152d45, #2e6399) border-box;
+}
+.nav.open .nav-items {
+  opacity: 1;
+  visibility: visible;
+  max-height: 500px;
+  display: block;
+}
+.nav-items .contact-button {
+  display: block;
+  margin-bottom: 10px;
+  background: #2e6399;
+  border: none;
+  width: 105%;
+  transform: translateX(-12px);
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 25px;
+}
+.nav-items li > :hover {
+  color: #2e6399;
+}

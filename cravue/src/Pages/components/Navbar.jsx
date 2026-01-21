@@ -1,4 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
+import logo from "../../assets/logo.png";
 const Navbar = ({ navState, setNavState }) => {
   function openNav() {
     navState === "open" ? setNavState("") : setNavState("open");
@@ -6,13 +7,16 @@ const Navbar = ({ navState, setNavState }) => {
   const location = useLocation();
   return (
     <nav className={`nav ${navState}`}>
-      <img src="" alt="" />
-      <ul className="menu">
-        <button className="menu-icon" onClick={openNav}>
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+      <div className="container">
+        {" "}
+        <ul className="menu">
+          <img src={logo} alt="Logo" width="43px" />
+          <button className="menu-icon" onClick={openNav}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </ul>
         <div className="nav-items">
           <li>
             <Link to="/">Home</Link>
@@ -29,14 +33,24 @@ const Navbar = ({ navState, setNavState }) => {
           <li>
             <Link to="/contact">Contact</Link>
           </li>
-          <button>
+
+          {location.pathname === "/" ? (
+            <a
+              href="https://tally.so/r/w77g9A"
+              target="_blank"
+              className="contact-button"
+            >
+              Sign Up
+              <img src="" alt="" />
+            </a>
+          ) : (
             <Link to="/contact" className="contact-button">
-              {location.pathname === "/" ? "Sign Up" : "Get In Touch"}{" "}
+              Get In Touch
               <img src="" alt="" />
             </Link>
-          </button>
+          )}
         </div>
-      </ul>
+      </div>
     </nav>
   );
 };
