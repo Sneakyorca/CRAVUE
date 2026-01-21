@@ -40,12 +40,12 @@ const Navbar = ({ navState, setNavState }) => {
               target="_blank"
               className="contact-button"
             >
-              Sign Up
+              <span>Sign Up</span>
               <img src="" alt="" />
             </a>
           ) : (
             <Link to="/contact" className="contact-button">
-              Get In Touch
+              <span>Get In Touch</span>
               <img src="" alt="" />
             </Link>
           )}

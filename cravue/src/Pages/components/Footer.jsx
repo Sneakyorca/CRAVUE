@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
+import logo from "./../../assets/logo.png";
 const Footer = () => {
   return (
     <footer>
       <h2>
-        <img src="" alt="" /> CRAVUE
+        <img src={logo} alt="" width="43px" />
+        <span> CRAVUE</span>
       </h2>
       <p>CRAVUE - Precision, Creativity, Value.</p>
       <p>cravue@gmail.com</p>
@@ -38,7 +40,9 @@ const Footer = () => {
               <Link to="/contact">Contact</Link>
             </li>
             <li>
-              <a href="">Lead capture forms</a>
+              <a href="https://tally.so/r/w77g9A" target="_blank">
+                Lead capture forms
+              </a>
             </li>
             <li>
               <Link to="/blog">Blog</Link>
