@@ -1,0 +1,131 @@
+.home {
+  margin: 0 25px;
+}
+.home h2 {
+  margin-bottom: 10px;
+}
+
+/* hero section */
+
+#hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30vh;
+  text-align: center;
+  margin-bottom: 60px;
+}
+#hero h1 {
+  margin-bottom: 20px;
+}
+#hero p {
+  margin-bottom: 20px;
+}
+#hero .nav-links {
+  display: flex;
+  gap: 10px;
+}
+#hero .link {
+  display: inline-block;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 8px 0;
+  min-width: 140px;
+  border: 2px solid transparent;
+  background:
+    linear-gradient(rgb(4, 28, 52), rgb(4, 28, 52)) padding-box,
+    linear-gradient(45deg, #152d45, #2e6399) border-box;
+}
+#hero a.link:first-child {
+  background: #2e6399;
+  transition: opacity 0.3s ease;
+}
+#hero a.link:first-child:hover {
+  background: #3f54aa;
+}
+#hero .link:last-child:hover {
+  background:
+    linear-gradient(rgb(21, 45, 69), rgb(21, 45, 69)) padding-box,
+    linear-gradient(45deg, #152d45, #2e6399) border-box;
+}
+
+/* about section */
+
+#about {
+  margin-bottom: 60px;
+}
+#about p {
+  margin-bottom: 0;
+  margin-right: 10px;
+}
+#about .link {
+  display: inline-block;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 8px 0;
+  min-width: 140px;
+  margin-top: 15px;
+  border: 1px solid #4289d1;
+  background: linear-gradient(to right, black, black, black, #2e6399, #2e6399);
+}
+
+/* services section */
+
+#services p:first-child {
+  font-weight: 600;
+  font-size: 20px;
+  display: inline-block;
+  border-radius: 15px;
+  text-align: center;
+  padding: 10px 25px;
+  border: 4px solid transparent;
+  background:
+    linear-gradient(black, black) padding-box,
+    linear-gradient(to right, #2e6399, #152d45) border-box;
+  margin-bottom: 20px;
+}
+#services h2 {
+  margin-left: 6px;
+}
+#services p {
+  margin-right: 25px;
+}
+#services h2 + p {
+  margin-left: 6px;
+  margin-bottom: 15px;
+}
+.service-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.service-card {
+  border: 5px solid transparent;
+  background:
+    linear-gradient(#0b131b, #0b131b) padding-box,
+    linear-gradient(133deg, #2e6499b7 0%, #2e6399b7 30%, black 41%, black)
+      border-box;
+  padding: 100px 0;
+  width: 350px;
+  border-radius: 15px;
+  text-align: center;
+}
+.service-card h1 {
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-size: 35px;
+}
+.service-card img {
+  margin-bottom: 30px;
+}
+
+/* faqs section */
+#faqs h1 {
+  text-align: center;
+}

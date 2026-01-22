@@ -3,6 +3,10 @@ import Accordion from "./components/Accordion";
 import Carousel from "./components/Carousel";
 import { Link } from "react-router-dom";
 import ContactCard from "./components/ContactCard";
+import studio from "./../assets/studio.jpg";
+import brandlab from "./../assets/brandlab.png";
+import growth from "./../assets/growth.png";
+import aboutimg from "./../assets/about.jpg";
 const Home = ({ navState }) => {
   return (
     <div className="home">
@@ -22,7 +26,7 @@ const Home = ({ navState }) => {
             className="link"
             style={{ opacity: navState && 0 }}
           >
-            Sign up
+            Sign Up
           </a>
           <Link to="/services" className="link">
             View Services
@@ -40,7 +44,17 @@ const Home = ({ navState }) => {
           not just as an agency but as a scalable company solving deep-rooted
           marketing and brand positioning problems.
         </p>
-        <img src="" alt="" />
+        <img
+          src={aboutimg}
+          alt=""
+          width="100%"
+          height={200}
+          style={{
+            objectFit: "cover",
+            objectPosition: "top",
+            borderRadius: "10px",
+          }}
+        />
         <Link to="/about" className="link">
           Read more
         </Link>
@@ -51,15 +65,17 @@ const Home = ({ navState }) => {
         <p>
           We simplify understanding of our divisions under one unified brand.
         </p>
-        <Link to="/services" className="link">
-          <ServiceCard text="Cravue Studio" />
-        </Link>
-        <Link to="/services" className="link">
-          <ServiceCard text="Cravue Brandlab" />
-        </Link>
-        <Link to="/services" className="link">
-          <ServiceCard text="Cravue Growth" />
-        </Link>
+        <div className="service-cards">
+          <Link to="/services" className="link">
+            <ServiceCard text="Cravue Studio" image={studio} />
+          </Link>
+          <Link to="/services" className="link">
+            <ServiceCard text="Cravue Brandlab" image={brandlab} />
+          </Link>
+          <Link to="/services" className="link">
+            <ServiceCard text="Cravue Growth" image={growth} />
+          </Link>
+        </div>
       </section>
       <section id="faqs">
         <p className="title lg">FAQS</p>

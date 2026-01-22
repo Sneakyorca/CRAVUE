@@ -1,3 +1,5 @@
+import email from "./../assets/ic_baseline-email.svg";
+import phone from "./../assets/line-md_phone-filled.svg";
 const Contact = () => {
   const handlesubmit = async (e) => {
     e.preventDefault();
@@ -53,13 +55,13 @@ const Contact = () => {
       </p>
       <div className="gradient-background">
         <p>
-          <img src="" alt="" /> Email
+          <img src={email} alt="Email" /> Email
         </p>
         <p>cravue@gmail.com</p>
       </div>
       <div className="gradient-background">
         <p>
-          <img src="" alt="" /> Phone
+          <img src={phone} alt="Phone" /> Phone
         </p>
         <p>+234 567 8900</p>
       </div>

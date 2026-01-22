@@ -1,6 +1,8 @@
 import Accordion from "./components/Accordion";
 import Carousel from "./components/Carousel";
 import ContactCard from "./components/ContactCard";
+import cancel from "./../assets/cancel.svg";
+import tick from "./../assets/tick.svg";
 
 const About = () => {
   return (
@@ -35,43 +37,44 @@ const About = () => {
       <div className="card">
         <p className="title">Other Agencies</p>
         <p>
-          <img src="" alt="" /> Prone to errors
+          <img src={cancel} alt="Cancel" /> Prone to errors
         </p>
         <p>
-          <img src="" alt="" /> Limited by Work Hours
+          <img src={cancel} alt="Cancel" /> Limited by Work Hours
         </p>
         <p>
-          <img src="" alt="" /> High Labour Cost & Overhead
+          <img src={cancel} alt="Cancel" /> High Labour Cost & Overhead
         </p>
         <p>
-          <img src="" alt="" /> Slow and Time Consuming Tasks
+          <img src={cancel} alt="Cancel" /> Slow and Time Consuming Tasks
         </p>
         <p>
-          <img src="" alt="" /> Disconnected & Repetitive Work
+          <img src={cancel} alt="Cancel" /> Disconnected & Repetitive Work
         </p>
         <p>
-          <img src="" alt="" /> Inconsistent & Dependent On Workforce
+          <img src={cancel} alt="Cancel" /> Inconsistent & Dependent On
+          Workforce
         </p>
       </div>
       <div className="card">
         <p className="title">CRAVUE Works</p>
         <p>
-          <img src="" alt="" /> Smart Driven Decisions
+          <img src={tick} alt="Tick" /> Smart Driven Decisions
         </p>
         <p>
-          <img src="" alt="" /> 24/7 Automated Workflow
+          <img src={tick} alt="Tick" /> 24/7 Automated Workflow
         </p>
         <p>
-          <img src="" alt="" /> Scalable & Cost Effective{" "}
+          <img src={tick} alt="Tick" /> Scalable & Cost Effective{" "}
         </p>
         <p>
-          <img src="" alt="" /> Instant Data Processing
+          <img src={tick} alt="Tick" /> Instant Data Processing
         </p>
         <p>
-          <img src="" alt="" /> Seamless System Integration
+          <img src={tick} alt="Tick" /> Seamless System Integration
         </p>
         <p>
-          <img src="" alt="" /> Consistent and Reliable Output
+          <img src={tick} alt="Tick" /> Consistent and Reliable Output
         </p>
       </div>
       <p className="title round">FAQS</p>

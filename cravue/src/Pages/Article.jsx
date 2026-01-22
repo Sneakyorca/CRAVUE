@@ -1,6 +1,7 @@
 import { Link, useParams } from "react-router-dom";
 import { blog_content as articles } from "./components/blog_content";
 import { useNavigate } from "react-router-dom";
+import arrowback from "./../assets/material-symbols_arrow-back-rounded.svg";
 const Article = () => {
   const navigate = useNavigate();
   const { id } = useParams();
@@ -26,6 +27,7 @@ const Article = () => {
           navigate(-1);
         }}
       >
+        <img src={arrowback} alt="Arrow Back" />
         Go Back
       </button>
       <div className="info">

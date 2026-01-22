@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import "./styles/home.css";
 @import "./styles/service.css";
 @import "./styles/about.css";
@@ -13,6 +14,7 @@
   color: white;
   -webkit-tap-highlight-color: transparent;
   text-decoration: none;
+  font-family: "Inter", sans-serif;
 }
 ul,
 li {
@@ -21,4 +23,25 @@ li {
 #root {
   background-color: black;
   padding-top: 20px;
+}
+h1 {
+  font-weight: 600;
+  font-size: 30px;
+}
+p {
+  font-size: 15px;
+}
+h2 {
+  font-size: 25px;
+}
+.title.lg {
+  font-weight: 500;
+  font-size: 23px;
+  text-align: center;
+  border: 1px solid white;
+  padding: 10px 30px;
+  display: flex;
+  justify-self: center;
+  border-radius: 15px;
+  margin-bottom: 10px;
 }
