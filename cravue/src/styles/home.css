@@ -128,4 +128,68 @@
 /* faqs section */
 #faqs h1 {
   text-align: center;
+  margin-bottom: 10px;
+}
+#faqs > p:nth-child(3) {
+  text-align: center;
+  margin-bottom: 20px;
+}
+#faqs .accordion-item {
+  margin-bottom: 3px;
+  background: #28282880;
+  border-radius: 5px;
+  padding: 8px 5px;
+}
+#faqs .accordion-title {
+  font-size: 11px;
+  font-weight: 600;
+}
+#faqs .accordion .accordion-content {
+  max-height: 0;
+  font-weight: 500;
+  font-size: 9px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+#faqs .accordion-content.open {
+  max-height: 50px;
+  transition: all 0.3s ease;
+  padding-top: 10px;
+}
+#faqs .accordion {
+  position: relative;
+  backdrop-filter: blur(20px);
+}
+#faqs .accordion::before {
+  content: "";
+  position: absolute;
+  width: 264px;
+  height: 80.6px;
+  background: linear-gradient(to right, #2e6399, #28282880, #000000);
+  top: 30%;
+  left: 30px;
+  z-index: -1;
+  transform: rotate(-22.5deg);
+}
+
+/* clients */
+
+#clients .carousel {
+  overflow: hidden;
+  width: 100%;
+}
+.carousel-slider {
+  animation: carousel 4s linear infinite;
+  display: flex;
+  gap: 80px;
+  width: max-content;
+  align-items: center;
+}
+@keyframes carousel {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-53%);
+  }
 }

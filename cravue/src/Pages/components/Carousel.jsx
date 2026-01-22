@@ -3,10 +3,13 @@ import slider2 from "./../../assets/slider2.png";
 import slider3 from "./../../assets/slider3.png";
 const Carousel = () => {
   return (
-    <div className="carousel">
-      <img src={slider1} width={200} alt="" />
-      <img src={slider2} width={200} alt="" />
-      <img src={slider3} width={200} alt="" />
+    <div className="carousel-slider">
+      <img src={slider1} width={155} alt="" />
+      <img src={slider2} width={155} alt="" />
+      <img src={slider3} width={155} height={110} alt="" />
+      <img src={slider1} width={155} alt="" />
+      <img src={slider2} width={155} alt="" />
+      <img src={slider3} width={155} height={110} alt="" />
     </div>
   );
 };

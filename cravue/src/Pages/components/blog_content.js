@@ -1,7 +1,11 @@
+import article1 from "./../../assets/article1.png";
+import article2 from "./../../assets/article2.png";
+import article3 from "./../../assets/article3.png";
+import article4 from "./../../assets/article4.png";
 export const blog_content = [
   {
     title: "The Future of CRAVUE: How It’s Changing Business Operations",
-    image: 1,
+    image: article1,
     type: "Article",
     id: 1,
     block: [
@@ -23,7 +27,7 @@ export const blog_content = [
       },
       {
         type: "img",
-        src: "",
+        src: article1,
       },
       {
         type: "h2",
@@ -136,7 +140,7 @@ export const blog_content = [
   },
   {
     title: "Other Agencies vs. CRAVUE: Who Saves More Money & Time",
-    image: 1,
+    image: article2,
     type: "Article",
     id: 2,
     block: [
@@ -159,7 +163,7 @@ export const blog_content = [
       },
       {
         type: "img",
-        src: "",
+        src: article2,
       },
       {
         type: "h2",
@@ -295,7 +299,7 @@ export const blog_content = [
   },
   {
     title: "How To Transform Workflow Automation For Business",
-    image: 1,
+    image: article3,
     type: "Article",
     id: 3,
     block: [
@@ -309,7 +313,7 @@ export const blog_content = [
       },
       {
         type: "img",
-        src: "",
+        src: article3,
       },
       {
         type: "h2",
@@ -493,7 +497,7 @@ export const blog_content = [
   },
   {
     title: "5 Must - Have Tools To Streamline Your Business Tasks",
-    image: 1,
+    image: article4,
     type: "Resources",
     id: 4,
     block: [
@@ -513,7 +517,7 @@ export const blog_content = [
       },
       {
         type: "img",
-        src: "",
+        src: article4,
       },
       {
         type: "h2",

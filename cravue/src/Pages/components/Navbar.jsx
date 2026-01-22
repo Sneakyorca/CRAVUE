@@ -1,11 +1,15 @@
 import { Link, useLocation } from "react-router-dom";
 import logo from "./../../assets/logo.png";
 import arrowup from "./../../assets/formkit_arrowup.svg";
+import { useEffect } from "react";
 const Navbar = ({ navState, setNavState }) => {
   function openNav() {
     navState === "open" ? setNavState("") : setNavState("open");
   }
   const location = useLocation();
+  useEffect(() => {
+    setNavState("");
+  }, [location]);
   return (
     <nav className={`nav ${navState}`}>
       <div className="container">
