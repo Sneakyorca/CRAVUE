@@ -1,3 +1,6 @@
+import studio from "./../assets/studio.jpg";
+import brandlab from "./../assets/brandlab.png";
+import growth from "./../assets/growth.png";
 const Service = () => {
   return (
     <div className="services">
@@ -8,7 +11,7 @@ const Service = () => {
         not harder.
       </p>
       <p className="title">Cravue Studio</p>
-      <img src="" alt="" />
+      <img src={studio} alt="" width="100%" />
       <p>
         We tell stories that make brands impossible to ignore. <br />
         Cravue Studio is our creative powerhouse, the home of visuals,
@@ -23,7 +26,7 @@ const Service = () => {
         <br /> Your brand doesn’t just show up, it performs.
       </p>
       <p className="title">Cravue Studio</p>
-      <img src="" alt="" />
+      <img src={brandlab} alt="" width="100%" />
       <p>
         We build clarity before creativity. <br />
         Cravue BrandLab is where strategy meets identity. <br />
@@ -38,7 +41,7 @@ const Service = () => {
         <br /> A brand people instantly understand, remember, and trust.
       </p>
       <p className="title">Cravue Studio</p>
-      <img src="" alt="" />
+      <img src={growth} alt="" width="100%" />
       <p>
         We engineer creative systems that drive results. <br />
         Cravue GrowthLab combines marketing psychology, paid media, and content

@@ -34,14 +34,22 @@ p {
 h2 {
   font-size: 25px;
 }
+
+.title {
+  font-weight: 500;
+  font-size: 16.2px;
+  text-align: center;
+  border: 1px solid white;
+  padding: 3px 20px;
+  display: flex;
+  justify-self: center;
+  border-radius: 4.5px;
+  margin-bottom: 30px;
+}
 .title.lg {
   font-weight: 500;
   font-size: 23px;
-  text-align: center;
-  border: 1px solid white;
   padding: 10px 30px;
-  display: flex;
-  justify-self: center;
   border-radius: 15px;
   margin-bottom: 10px;
 }
