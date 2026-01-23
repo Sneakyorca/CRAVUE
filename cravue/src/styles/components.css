@@ -91,7 +91,9 @@
   display: block;
 }
 .nav-items .contact-button {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 10px;
   background: #2e6399;
   border: none;
@@ -104,7 +106,8 @@
 .nav-items li > :hover {
   color: #2e6399;
 }
-.nav-items .contact-button:hover span {
+.nav-items .contact-button:hover span,
+.nav-items .contact-button:hover img {
   display: inline-block;
   transform: translateY(-2px) scale(1.05);
 }

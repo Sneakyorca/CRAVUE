@@ -72,6 +72,9 @@
   border: 1px solid #4289d1;
   background: linear-gradient(to right, black, black, black, #2e6399, #2e6399);
 }
+#about .link:hover {
+  background: #1d5288;
+}
 
 /* services section */
 
@@ -115,6 +118,10 @@
   width: 350px;
   border-radius: 15px;
   text-align: center;
+  transition: all 0.3s ease;
+}
+.service-card:hover {
+  transform: scale(1.05);
 }
 .service-card h1 {
   font-weight: 800;
@@ -139,6 +146,7 @@
   background: #28282880;
   border-radius: 5px;
   padding: 8px 5px;
+  cursor: pointer;
 }
 #faqs .accordion-title {
   font-size: 11px;
@@ -159,21 +167,30 @@
 #faqs .accordion {
   position: relative;
   backdrop-filter: blur(20px);
+  margin-bottom: 60px;
 }
 #faqs .accordion::before {
   content: "";
   position: absolute;
   width: 264px;
   height: 80.6px;
-  background: linear-gradient(to right, #2e6399, #28282880, #000000);
-  top: 30%;
+  border-radius: 50px;
+  background: linear-gradient(22.5deg, #2e6399 60%, #28282880, #000000);
+  filter: blur(30px);
+  top: 35%;
   left: 30px;
   z-index: -1;
-  transform: rotate(-22.5deg);
+  transform: rotate(-15deg);
 }
 
 /* clients */
 
+#clients > p {
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
 #clients .carousel {
   overflow: hidden;
   width: 100%;
@@ -185,6 +202,9 @@
   width: max-content;
   align-items: center;
 }
+.carousel {
+  margin-bottom: 50px;
+}
 @keyframes carousel {
   0% {
     transform: translateX(0);
@@ -192,4 +212,49 @@
   100% {
     transform: translateX(-53%);
   }
+}
+#clients .card {
+  background: linear-gradient(
+    135deg,
+    #2e639980 20%,
+    #d9d9d900 30%,
+    #d9d9d900 70%,
+    #2e639980 80%
+  );
+  display: flex;
+  flex-direction: column;
+  padding: 30px 50px;
+  gap: 10px;
+  margin-bottom: 100px;
+  border-radius: 30px;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+#clients .card h2 {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+#clients .card p {
+  font-weight: 400;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+#clients .card button {
+  font-weight: 500;
+  font-size: 9px;
+  outline: none;
+  border: none;
+  background-color: #2e6399;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+#clients .card button.gray,
+#clients .card button:hover {
+  background-color: #232c34;
 }

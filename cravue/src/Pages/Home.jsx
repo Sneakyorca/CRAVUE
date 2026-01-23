@@ -84,10 +84,11 @@ const Home = ({ navState }) => {
         <Accordion />
       </section>
       <section id="clients">
+        <p>Clients</p>
         <div className="carousel">
           <Carousel />
         </div>
-        <ContactCard />
+        <ContactCard darker={navState && "gray"} />
       </section>
     </div>
   );
