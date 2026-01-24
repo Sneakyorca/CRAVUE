@@ -30,9 +30,11 @@ h1 {
 }
 p {
   font-size: 15px;
+  font-weight: 500;
 }
 h2 {
   font-size: 25px;
+  font-weight: 700;
 }
 
 .title {
@@ -40,7 +42,7 @@ h2 {
   font-size: 16.2px;
   text-align: center;
   border: 1px solid white;
-  padding: 3px 20px;
+  padding: 5px 20px;
   display: flex;
   justify-self: center;
   border-radius: 4.5px;

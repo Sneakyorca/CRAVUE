@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 
 const Accordion = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -29,6 +30,12 @@ const Accordion = () => {
         "Yes. Cravue is built to help startups and small businesses scale without breaking the bank. we offer flexible packages, phased strategies, and training programs that help founders grow step by step.",
     },
   ];
+  const location = useLocation();
+  useEffect(() => {
+    if (openIndex !== null) {
+      setOpenIndex(null);
+    }
+  }, [location]);
   const handleClick = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };

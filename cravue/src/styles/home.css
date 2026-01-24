@@ -1,5 +1,5 @@
 .home {
-  margin: 0 25px;
+  margin: 0 5vw;
 }
 .home h2 {
   margin-bottom: 10px;
@@ -57,7 +57,7 @@
   margin-bottom: 60px;
 }
 #about p {
-  margin-bottom: 0;
+  margin-bottom: 10px;
   margin-right: 10px;
 }
 #about .link {
@@ -100,6 +100,8 @@
 #services h2 + p {
   margin-left: 6px;
   margin-bottom: 15px;
+  font-size: 15px;
+  font-weight: 500;
 }
 .service-cards {
   display: flex;
@@ -114,8 +116,8 @@
     linear-gradient(#0b131b, #0b131b) padding-box,
     linear-gradient(133deg, #2e6499b7 0%, #2e6399b7 30%, black 41%, black)
       border-box;
-  padding: 100px 0;
-  width: 350px;
+  min-width: 84vw;
+  padding: 80px 2vw;
   border-radius: 15px;
   text-align: center;
   transition: all 0.3s ease;
@@ -126,7 +128,7 @@
 .service-card h1 {
   font-weight: 800;
   letter-spacing: 1px;
-  font-size: 35px;
+  font-size: 30px;
 }
 .service-card img {
   margin-bottom: 30px;
@@ -141,47 +143,6 @@
   text-align: center;
   margin-bottom: 20px;
 }
-#faqs .accordion-item {
-  margin-bottom: 3px;
-  background: #28282880;
-  border-radius: 5px;
-  padding: 8px 5px;
-  cursor: pointer;
-}
-#faqs .accordion-title {
-  font-size: 11px;
-  font-weight: 600;
-}
-#faqs .accordion .accordion-content {
-  max-height: 0;
-  font-weight: 500;
-  font-size: 9px;
-  overflow: hidden;
-  transition: all 0.3s ease;
-}
-#faqs .accordion-content.open {
-  max-height: 50px;
-  transition: all 0.3s ease;
-  padding-top: 10px;
-}
-#faqs .accordion {
-  position: relative;
-  backdrop-filter: blur(20px);
-  margin-bottom: 60px;
-}
-#faqs .accordion::before {
-  content: "";
-  position: absolute;
-  width: 264px;
-  height: 80.6px;
-  border-radius: 50px;
-  background: linear-gradient(22.5deg, #2e6399 60%, #28282880, #000000);
-  filter: blur(30px);
-  top: 35%;
-  left: 30px;
-  z-index: -1;
-  transform: rotate(-15deg);
-}
 
 /* clients */
 
@@ -191,7 +152,7 @@
   font-size: 20px;
   margin-bottom: 10px;
 }
-#clients .carousel {
+.carousel {
   overflow: hidden;
   width: 100%;
 }
@@ -213,7 +174,8 @@
     transform: translateX(-53%);
   }
 }
-#clients .card {
+#clients .card,
+.about .card {
   background: linear-gradient(
     135deg,
     #2e639980 20%,
@@ -231,17 +193,20 @@
   text-align: center;
   cursor: pointer;
 }
-#clients .card h2 {
+#clients .card h2,
+.about .card h2 {
   font-weight: 700;
   font-size: 20px;
   margin-bottom: 0;
 }
-#clients .card p {
+#clients .card p,
+.about .card p {
   font-weight: 400;
   font-size: 13px;
   margin-bottom: 5px;
 }
-#clients .card button {
+#clients .card button,
+.about .card button {
   font-weight: 500;
   font-size: 9px;
   outline: none;
@@ -255,6 +220,8 @@
   cursor: pointer;
 }
 #clients .card button.gray,
-#clients .card button:hover {
+#clients .card button:hover,
+.about .card button.gray,
+.about.card button:hover {
   background-color: #232c34;
 }

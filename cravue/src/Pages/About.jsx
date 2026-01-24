@@ -10,7 +10,9 @@ const About = () => {
       <p className="title">About Us</p>
       <h1>Helping Businesses Grow</h1>
       <p>Cravue helps businesses streamline operations and faster.</p>
-      <Carousel />
+      <div className="carousel">
+        <Carousel />
+      </div>
       <h2>Who We Are</h2>
       <p>
         Cravue is a team of innovators dedicated to making marketing easy and
@@ -32,9 +34,13 @@ const About = () => {
           service.
         </p>
       </div>
-      <p className="title lg">Why Us</p>
+      <p className="title lg first">Why Us</p>
       <h2>What makes us stand out in the industry</h2>
-      <div className="card">
+      <p>
+        Discover how our innovative strategies, data-driven approach and
+        commitment to results set us up apart from the competition
+      </p>
+      <div className="card info">
         <p className="title">Other Agencies</p>
         <p>
           <img src={cancel} alt="Cancel" /> Prone to errors
@@ -56,7 +62,7 @@ const About = () => {
           Workforce
         </p>
       </div>
-      <div className="card">
+      <div className="card two info">
         <p className="title">CRAVUE Works</p>
         <p>
           <img src={tick} alt="Tick" /> Smart Driven Decisions
@@ -77,7 +83,7 @@ const About = () => {
           <img src={tick} alt="Tick" /> Consistent and Reliable Output
         </p>
       </div>
-      <p className="title round">FAQS</p>
+      <p className="title lg">FAQS</p>
       <h2>We’ve Got the Answers You’re Looking For</h2>
       <p>Quick answers to your questions</p>
       <Accordion />

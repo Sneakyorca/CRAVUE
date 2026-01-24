@@ -1,5 +1,5 @@
 .services {
-  margin: 85px 25px 0;
+  margin: 85px 5vw 0;
 }
 .services h1 {
   text-align: center;
@@ -7,7 +7,7 @@
   margin-bottom: 25px;
 }
 .services p {
-  font-size: 18px;
+  font-size: 21px;
 }
 .services p:nth-child(3),
 p.title {
@@ -15,11 +15,20 @@ p.title {
   font-size: 18px;
 }
 .services p:nth-child(3) {
-  margin-bottom: 25px;
+  margin-bottom: 35px;
 }
 .services .title:not(.services .title:first-child) {
   justify-self: left;
 }
 .services img {
+  width: 99%;
+  margin-bottom: 30px;
+  display: flex;
+  justify-self: center;
+}
+.services img + p {
+  margin-bottom: 30px;
+}
+.services img + p + p {
   margin-bottom: 30px;
 }
