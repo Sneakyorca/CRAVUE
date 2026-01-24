@@ -2,23 +2,13 @@ import { Link, useParams } from "react-router-dom";
 import { blog_content as articles } from "./components/blog_content";
 import { useNavigate } from "react-router-dom";
 import arrowback from "./../assets/material-symbols_arrow-back-rounded.svg";
+import NotFound from "./components/NotFound";
 const Article = () => {
   const navigate = useNavigate();
   const { id } = useParams();
   const article = articles.find((art) => String(art.id) === String(id));
 
-  if (!article)
-    return (
-      <div className="error-404">
-        <span>Page Not Found</span>
-        <h1>Page Isn't Available This Time</h1>
-        <p>
-          This page seems to be missing! Let’s get you back on track. Head back
-          home.
-        </p>
-        <Link to="/">Go Back Home</Link>
-      </div>
-    );
+  if (!article) return <NotFound />;
 
   return (
     <div className={"article-page " + `number${id}`}>

@@ -8,6 +8,7 @@ import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Service from "./Pages/Service";
 import Contact from "./Pages/Contact";
+import NotFound from "./Pages/components/NotFound";
 function App() {
   const [navState, setNavState] = useState("");
   return (
@@ -20,7 +21,9 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/article/:id" element={<Article />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
+
       <Footer />
     </>
   );
