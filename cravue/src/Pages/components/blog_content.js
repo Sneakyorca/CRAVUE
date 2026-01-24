@@ -46,7 +46,7 @@ export const blog_content = [
         text: "The vision of Cravue is daring: to redefine how brands grow in Africa and across the world.",
       },
       {
-        type: "h2",
+        type: "h3",
         text: "Four Divisions. One Purpose. Infinite Possibilities.",
       },
       {
@@ -124,12 +124,12 @@ export const blog_content = [
         text: "We see a future where startups become powerhouses, where young creatives become industry leaders, and where African creativity stands proudly on the global stage.",
       },
       {
-        type: "p",
+        type: "p(with extra margin)",
         text: `Because for us, this isn’t just business.
           It’s a calling to create better brands, better creators, and better systems for the next generation.`,
       },
       {
-        type: "p(with extra margin)",
+        type: "p",
         text: `Cravue: Clarity. Creativity. Growth.`,
       },
       {
@@ -180,7 +180,7 @@ export const blog_content = [
         You’re not just getting a design or campaign, you’re getting a structure that works long-term.`,
       },
       {
-        type: "h2",
+        type: "h2(left)",
         text: "One Team, Multiple Divisions, All Aligned.",
       },
       {
@@ -212,7 +212,7 @@ export const blog_content = [
         text: "No more haggling with five agencies. You haggle with one efficiency-designed ecosystem.",
       },
       {
-        type: "h2",
+        type: "h2(left)",
         text: "We Don't Guess, We Strategize First.",
       },
       {
@@ -229,7 +229,7 @@ export const blog_content = [
         text: "Time saved. Money saved. Growth sustained.",
       },
       {
-        type: "h2",
+        type: "h2(left)",
         text: "You Pay for Value, Not Hours.",
       },
       {
@@ -239,9 +239,10 @@ export const blog_content = [
 `,
       },
       {
-        type: "h2",
+        type: "p",
         text: "It's how we create world-class creative work faster and smarter.",
       },
+      { type: "h2(left)", text: "Fast Without Sacrificing On Quality." },
       {
         type: "p",
         text: `We've turned the model of how creative work is accomplished on its head.
@@ -255,7 +256,7 @@ export const blog_content = [
 `,
       },
       {
-        type: "h2",
+        type: "h2(left,top)",
         text: `We Grow With You.`,
       },
       {
@@ -273,7 +274,7 @@ export const blog_content = [
         text: `So instead of starting all over again each year with new vendors, you grow with a single trusted partner who already knows your brand inside out.`,
       },
       {
-        type: "h2",
+        type: "h2(left)",
         text: `The Verdict`,
       },
       {
@@ -502,7 +503,7 @@ export const blog_content = [
     id: 4,
     block: [
       {
-        type: "h2",
+        type: "h1",
         text: "5 Must-Have Tools to Streamline Your Business Tasks",
       },
       {

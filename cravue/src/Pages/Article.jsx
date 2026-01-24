@@ -21,7 +21,7 @@ const Article = () => {
     );
 
   return (
-    <div className="article-page">
+    <div className={"article-page " + `number${id}`}>
       <button
         onClick={() => {
           navigate(-1);
@@ -40,9 +40,28 @@ const Article = () => {
             return <h1 key={idx}>{block.text}</h1>;
           case "h2":
             return <h2 key={idx}>{block.text}</h2>;
+          case "h2(left)":
+            return (
+              <h2 key={idx} className="left">
+                {block.text}
+              </h2>
+            );
+          case "h2(left,top)":
+            return (
+              <h2 key={idx} className="left top">
+                {block.text}
+              </h2>
+            );
+          case "h3":
+            return <h3 key={idx}>{block.text}</h3>;
           case "p":
-          case "p(with extra margin)":
             return <p key={idx}>{block.text}</p>;
+          case "p(with extra margin)":
+            return (
+              <p key={idx} className="extra">
+                {block.text}
+              </p>
+            );
           case "img":
             return <img key={idx} src={block.src} alt="" />;
           default:
