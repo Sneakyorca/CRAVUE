@@ -14,16 +14,36 @@ const Footer = () => {
           <h3>Social</h3>
           <ul>
             <li>
-              <a href="">Instagram</a>
+              <a
+                href="https://www.instagram.com/cravuehq?igsh=ejl1ejh5YTEwZHVw"
+                target="_blank"
+              >
+                Instagram
+              </a>
             </li>
             <li>
-              <a href="">LinkedIn</a>
+              <a
+                href="https://www.linkedin.com/company/cravue-hq/"
+                target="_blank"
+              >
+                LinkedIn
+              </a>
             </li>
             <li>
-              <a href="">Twitter</a>
+              <a
+                href="https://youtube.com/@cravuehq?si=jH_RwJ25m6q4km9F"
+                target="_blank"
+              >
+                Youtube
+              </a>
             </li>
             <li>
-              <a href="">Facebook</a>
+              <a
+                href="https://www.facebook.com/share/1GQzkU3bFX/"
+                target="_blank"
+              >
+                Facebook
+              </a>
             </li>
           </ul>
         </div>

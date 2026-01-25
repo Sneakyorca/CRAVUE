@@ -118,6 +118,7 @@
 footer {
   background-color: #152d45;
   padding: 40px 30px 100px;
+  z-index: 2;
 }
 footer h2 {
   display: flex;
