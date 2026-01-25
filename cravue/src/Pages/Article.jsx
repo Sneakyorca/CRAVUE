@@ -3,6 +3,7 @@ import { blog_content as articles } from "./components/blog_content";
 import { useNavigate } from "react-router-dom";
 import arrowback from "./../assets/material-symbols_arrow-back-rounded.svg";
 import NotFound from "./components/NotFound";
+import background from "./../assets/rectangle.svg";
 const Article = () => {
   const navigate = useNavigate();
   const { id } = useParams();
@@ -14,7 +15,7 @@ const Article = () => {
     <div className={"article-page " + `number${id}`}>
       <button
         onClick={() => {
-          navigate(-1);
+          navigate("/blog");
         }}
       >
         <img src={arrowback} alt="Arrow Back" />
@@ -23,6 +24,11 @@ const Article = () => {
       <div className="info">
         <span className="title sm">{article.type}</span>
         <span className="title sm">March 11, 2025</span>
+      </div>
+      <div className="bg">
+        <img src={background} alt="" className="background" />{" "}
+        <img src={background} alt="" className="background" />{" "}
+        <img src={background} alt="" className="background" />{" "}
       </div>
       {(article.block ?? []).map((block, idx) => {
         switch (block.type) {

@@ -12,31 +12,54 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 30vh;
+  margin-top: 20vh;
   text-align: center;
   margin-bottom: 60px;
+  height: 30vh;
+  /* position: relative;
+  background-color: red; */
+}
+/* #hero video {
+  position: absolute;
+  width: 200%;
+  object-fit: cover;
+  height: 100%;
+} */
+#hero .display-info {
+  background: #152d45;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  border-radius: 25px;
+  padding: 5px 10px;
+  padding-right: 40px;
+  margin-bottom: 30px;
+}
+#hero .display-info span {
+  border-radius: 20px;
+  background: #2e6399;
+  padding: 3px 10px;
 }
 #hero h1 {
   margin-bottom: 20px;
+  z-index: 1;
 }
 #hero p {
   margin-bottom: 20px;
+  z-index: 1;
 }
 #hero .nav-links {
   display: flex;
   gap: 10px;
+  z-index: 1;
 }
 #hero .link {
   display: inline-block;
   border-radius: 10px;
   font-weight: 600;
   font-size: 12px;
-  padding: 8px 0;
+  padding: 9px 0;
   min-width: 140px;
-  border: 2px solid transparent;
-  background:
-    linear-gradient(rgb(4, 28, 52), rgb(4, 28, 52)) padding-box,
-    linear-gradient(45deg, #152d45, #2e6399) border-box;
 }
 #hero a.link:first-child {
   background: #2e6399;
@@ -45,10 +68,15 @@
 #hero a.link:first-child:hover {
   background: #3f54aa;
 }
+#hero .link:last-child {
+  background: #2e63994d;
+  border: 1px solid #dbdbdb61;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 #hero .link:last-child:hover {
-  background:
-    linear-gradient(rgb(21, 45, 69), rgb(21, 45, 69)) padding-box,
-    linear-gradient(45deg, #152d45, #2e6399) border-box;
+  background-color: #2e6399;
 }
 
 /* about section */
@@ -65,7 +93,7 @@
   border-radius: 10px;
   text-align: center;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
   padding: 8px 0;
   min-width: 140px;
   margin-top: 15px;
@@ -79,7 +107,7 @@
 /* services section */
 
 #services p:first-child {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 20px;
   display: inline-block;
   border-radius: 15px;
@@ -111,19 +139,17 @@
   margin-bottom: 60px;
 }
 .service-card {
-  border: 5px solid transparent;
-  background:
-    linear-gradient(#0b131b, #0b131b) padding-box,
-    linear-gradient(133deg, #2e6499b7 0%, #2e6399b7 30%, black 41%, black)
-      border-box;
+  position: relative;
   min-width: 84vw;
   padding: 80px 2vw;
+  z-index: 2;
   border-radius: 15px;
+  background-color: #0b131b;
   text-align: center;
-  transition: all 0.3s ease;
 }
-.service-card:hover {
+.border:hover {
   transform: scale(1.05);
+  transition: all 0.3s ease;
 }
 .service-card h1 {
   font-weight: 800;
@@ -224,4 +250,37 @@
 .about .card button.gray,
 .about.card button:hover {
   background-color: #232c34;
+}
+
+/* Glow Card Styles */
+div.border {
+  content: "";
+  position: relative;
+  border-radius: 15px;
+  padding: 5px;
+  background: linear-gradient(
+    var(--rotation),
+    #2e6499b7 0%,
+    #2e6399b7 30%,
+    black 41%,
+    black
+  );
+  animation: rotate-border 5s linear infinite;
+}
+
+/* Rotation Animation */
+@keyframes rotate-border {
+  from {
+    --rotation: 0deg;
+  }
+  to {
+    --rotation: 360deg;
+  }
+}
+
+/* Required for animating custom CSS properties */
+@property --rotation {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
 }

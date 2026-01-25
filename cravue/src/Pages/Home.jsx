@@ -7,10 +7,17 @@ import studio from "./../assets/studio.jpg";
 import brandlab from "./../assets/brandlab.png";
 import growth from "./../assets/growth.png";
 import aboutimg from "./../assets/about.jpg";
+import heroAnimation from "./../assets/anime.mp4";
 const Home = ({ navState }) => {
   return (
     <div className="home">
       <section id="hero">
+        {/* <video autoPlay loop muted>
+          <source src={heroAnimation} type="video/mp4" />
+        </video> */}
+        <p className="display-info">
+          <span>Preview</span> Content will appear here
+        </p>
         <h1>
           Establish brand credibility and clarity for potential clients,
           partners, and investors.

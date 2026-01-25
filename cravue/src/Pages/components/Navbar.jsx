@@ -15,7 +15,9 @@ const Navbar = ({ navState, setNavState }) => {
       <div className="container">
         {" "}
         <ul className="menu">
-          <img src={logo} alt="Logo" width="43px" />
+          <Link to="/">
+            <img src={logo} alt="Logo" width="43px" />
+          </Link>
           <button className="menu-icon" onClick={openNav}>
             <span></span>
             <span></span>

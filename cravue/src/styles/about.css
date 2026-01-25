@@ -49,7 +49,7 @@
 }
 .about .card.info {
   padding: 20px 10px;
-  border: 1px solid white;
+  border: 0.71px solid white;
   border-radius: 14.17px;
   background: linear-gradient(135deg, #152d45, #152d45, #0d0d0d 40%);
   margin-bottom: 20px;

@@ -54,6 +54,10 @@ export const blog_content = [
         text: "To make something timeless, you need structure, and Cravue has gotten this right with its four powerhouse units:",
       },
       {
+        type: "p",
+        text: "To make something timeless, you need structure, and Cravue has gotten this right with its four powerhouse units:",
+      },
+      {
         type: "h2",
         text: "Cravue Studio (Works)",
       },
@@ -68,6 +72,22 @@ export const blog_content = [
       {
         type: "h2",
         text: "Cravue Academy",
+      },
+      {
+        type: "p",
+        text: "Cravue Academy is where learning and doing converge. It's meant to fuel the next creative generation of marketers, entrepreneurs, and creatives via expert training, mentorship, and real-world projects.",
+      },
+      {
+        type: "p",
+        text: "We're not just teaching skills, we're creating the creative economy's next talent pool.",
+      },
+      {
+        type: "p",
+        text: "Our hands-on, community-driven, and impact-oriented programs educate students to think, build, and create like professionals in the industry.",
+      },
+      {
+        type: "h2",
+        text: "Cravue Lab",
       },
       {
         type: "p",

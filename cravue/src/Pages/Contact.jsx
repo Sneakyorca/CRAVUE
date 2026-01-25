@@ -3,16 +3,25 @@ import phone from "./../assets/line-md_phone-filled.svg";
 const Contact = () => {
   const handlesubmit = async (e) => {
     e.preventDefault();
-    const form = e.target;
-    const formData = new FormData(form);
-    const data = Object.fromEntries(formData.entries());
-    const patterns = {
-      fname: /^[A-Za-z]{2,20}$/,
-      lname: /^[A-Za-z]{2,20}$/,
-      email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
-      phone: /^\d{10}$/,
-      msg: /^.{5,500}$/,
+    const formData = Object.fromEntries(new FormData(e.target).entries());
+
+    const data = {
+      firstName: formData.fname,
+      lastName: formData.lname,
+      email: formData.email,
+      phone: formData.phone,
+      message: formData.msg,
     };
+
+    // Validation
+    const patterns = {
+      firstName: /^[A-Za-z]{2,20}$/,
+      lastName: /^[A-Za-z]{2,20}$/,
+      email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+      phone: /^[\d+\s]{7,20}$/,
+      message: /^.{5,500}$/,
+    };
+
     const errors = [];
     for (const key in patterns) {
       if (!patterns[key].test(data[key] || "")) {
@@ -24,27 +33,28 @@ const Contact = () => {
       return;
     }
 
-    // try {
-    //   const response = await fetch(
-    //     "https://cravue-server.vercel.app/api/contact",
-    //     {
-    //       method: "POST",
-    //       headers: { "Content-Type": "application/json" },
-    //       body: JSON.stringify(data),
-    //     },
-    //   );
+    try {
+      const response = await fetch(
+        "https://cravue-server.vercel.app/api/contact",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(data),
+        },
+      );
 
-    //   if (!response.ok) {
-    //     const result = await response.json().catch(() => ({}));
-    //     throw new Error(result.error || "Request failed");
-    //   }
+      if (!response.ok) {
+        const result = await response.json().catch(() => ({}));
+        throw new Error(result.error || "Request failed");
+      }
 
-    //   alert("Form submitted successfully!");
-    //   form.reset();
-    // } catch (err) {
-    //   alert(err.message || "Failed to submit form");
-    // }
+      alert("Form submitted successfully!");
+      e.target.reset();
+    } catch (err) {
+      alert(err.message || "Failed to submit form");
+    }
   };
+
   return (
     <div className="contact">
       <p className="title">Contact</p>
@@ -55,7 +65,7 @@ const Contact = () => {
       </p>
       <div className="gradient-background">
         <p>
-          <img src={email} alt="Email" /> Email
+          <img src={email} alt="Email" /> E-mail
         </p>
         <p>cravue@gmail.com</p>
       </div>
@@ -110,6 +120,7 @@ const Contact = () => {
         <div className="msg">
           <label htmlFor="msg">Message</label>
           <textarea
+            style={{ resize: "none" }}
             name="msg"
             id="msg"
             placeholder="Hi, I am John I need help with..."

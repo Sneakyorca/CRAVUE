@@ -16,6 +16,10 @@
   text-decoration: none;
   font-family: "Inter", sans-serif;
 }
+body,
+html {
+  height: 100%;
+}
 ul,
 li {
   list-style-type: none;
@@ -23,6 +27,9 @@ li {
 #root {
   background-color: black;
   padding-top: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 h1 {
   font-weight: 600;
@@ -41,7 +48,7 @@ h2 {
   font-weight: 500;
   font-size: 16.2px;
   text-align: center;
-  border: 1px solid white;
+  border: 0.5px solid white;
   padding: 5px 20px;
   display: flex;
   justify-self: center;
@@ -54,4 +61,13 @@ h2 {
   padding: 10px 30px;
   border-radius: 15px;
   margin-bottom: 10px;
+}
+footer {
+  margin-top: auto;
+}
+.blog > .title,
+.services > .title,
+.about > .title,
+.contact > .title {
+  border-width: 0.45px;
 }
