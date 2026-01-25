@@ -53,6 +53,8 @@
   border-radius: 14.17px;
   background: linear-gradient(135deg, #152d45, #152d45, #0d0d0d 40%);
   margin-bottom: 20px;
+  display: flex;
+  align-items: start;
 }
 .about .card.two.info {
   background: linear-gradient(225deg, #152d45, #152d45, #0d0d0d 40%);
