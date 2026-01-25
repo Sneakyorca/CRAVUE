@@ -1,0 +1,19 @@
+# Robots.txt for CRAVUE
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /private
+
+# Sitemaps
+Sitemap: https://cravue.com/sitemap.xml
+
+# Crawl delay (in seconds)
+Crawl-delay: 1
+
+# Rule for Google-specific crawling
+User-agent: Googlebot
+Allow: /
+
+# Rule for Bing
+User-agent: Bingbot
+Allow: /

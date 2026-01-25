@@ -3,14 +3,81 @@ import Accordion from "./components/Accordion";
 import Carousel from "./components/Carousel";
 import { Link } from "react-router-dom";
 import ContactCard from "./components/ContactCard";
+import { Helmet } from "react-helmet-async";
 import studio from "./../assets/studio.jpg";
 import brandlab from "./../assets/brandlab.png";
 import growth from "./../assets/growth.png";
 import aboutimg from "./../assets/about.jpg";
-import heroAnimation from "./../assets/anime.mp4";
+
 const Home = ({ navState }) => {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    name: "Cravue",
+    description:
+      "Full-service creative strategy company helping startups and growth-stage brands scale through storytelling, content creation, and brand development.",
+    url: "https://cravue.com",
+    logo: "https://cravue.com/src/assets/logo.png",
+    areaServed: "Worldwide",
+    knowsAbout: [
+      "Creative Strategy",
+      "Brand Development",
+      "Content Creation",
+      "Storytelling",
+      "UGC",
+      "Influencer Marketing",
+    ],
+    service: [
+      {
+        "@type": "Service",
+        name: "Cravue Studio",
+      },
+      {
+        "@type": "Service",
+        name: "Cravue Brandlab",
+      },
+      {
+        "@type": "Service",
+        name: "Cravue Growth",
+      },
+    ],
+  };
   return (
     <div className="home">
+      <Helmet>
+        <title>CRAVUE - Creative Strategy & Brand Development Agency</title>
+        <meta
+          name="description"
+          content="Cravue: Full-service creative strategy company for startups & growth-stage brands. Storytelling, brand development, content creation, UGC & influencer marketing."
+        />
+        <meta
+          name="keywords"
+          content="creative agency, brand development, storytelling, content creation, UGC, influencer marketing, branding"
+        />
+        <meta
+          property="og:title"
+          content="CRAVUE - Creative Strategy & Brand Development"
+        />
+        <meta
+          property="og:description"
+          content="Transform your brand with strategic storytelling and high-impact creative systems."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://cravue.com" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="CRAVUE - Creative Strategy & Brand Development"
+        />
+        <meta
+          name="twitter:description"
+          content="Transform your brand with strategic storytelling and high-impact creative systems."
+        />
+        <link rel="canonical" href="https://cravue.com" />
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
+      </Helmet>
       <section id="hero">
         {/* <video autoPlay loop muted>
           <source src={heroAnimation} type="video/mp4" />
@@ -53,7 +120,7 @@ const Home = ({ navState }) => {
         </p>
         <img
           src={aboutimg}
-          alt=""
+          alt="Cravue Creative Team and Studio"
           width="100%"
           height={200}
           style={{

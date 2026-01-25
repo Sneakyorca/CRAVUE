@@ -1,6 +1,28 @@
 import email from "./../assets/ic_baseline-email.svg";
 import phone from "./../assets/line-md_phone-filled.svg";
+import { Helmet } from "react-helmet-async";
+
 const Contact = () => {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    name: "Contact Cravue",
+    description:
+      "Get in touch with Cravue for creative strategy and brand development services.",
+    url: "https://cravue.com/contact",
+    contactPoint: {
+      "@type": "ContactPoint",
+      contactType: "Customer Service",
+      email: "hello@cravue.com",
+      availableLanguage: "en",
+    },
+    organization: {
+      "@type": "Organization",
+      name: "Cravue",
+      url: "https://cravue.com",
+    },
+  };
+
   const handlesubmit = async (e) => {
     e.preventDefault();
     const formData = Object.fromEntries(new FormData(e.target).entries());
@@ -57,6 +79,35 @@ const Contact = () => {
 
   return (
     <div className="contact">
+      {" "}
+      <Helmet>
+        <title>Contact Us | CRAVUE - Get in Touch</title>
+        <meta
+          name="description"
+          content="Contact CRAVUE for creative strategy and brand development services. Reach out via email, phone, or our contact form."
+        />
+        <meta
+          name="keywords"
+          content="contact, get in touch, inquiry, email, phone, support"
+        />
+        <meta property="og:title" content="Contact CRAVUE" />
+        <meta
+          property="og:description"
+          content="Get in touch with Cravue for creative strategy and brand development solutions."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://cravue.com/contact" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Contact CRAVUE" />
+        <meta
+          name="twitter:description"
+          content="Have a question? Let's get in touch!"
+        />
+        <link rel="canonical" href="https://cravue.com/contact" />
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
+      </Helmet>{" "}
       <p className="title">Contact</p>
       <h1>Get in touch with us</h1>
       <p>

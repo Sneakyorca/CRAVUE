@@ -1,12 +1,68 @@
 import Accordion from "./components/Accordion";
 import Carousel from "./components/Carousel";
 import ContactCard from "./components/ContactCard";
+import { Helmet } from "react-helmet-async";
 import cancel from "./../assets/cancel.svg";
 import tick from "./../assets/tick.svg";
 
 const About = () => {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Cravue",
+    description:
+      "Creative strategy company helping startups and growth-stage brands scale through storytelling, brand development, and marketing solutions.",
+    url: "https://cravue.com/about",
+    logo: "https://cravue.com/src/assets/logo.png",
+    foundingDate: "2024",
+    areaServed: "Worldwide",
+    sameAs: [
+      "https://twitter.com/cravue",
+      "https://linkedin.com/company/cravue",
+    ],
+    knowsAbout: [
+      "Creative Strategy",
+      "Brand Development",
+      "Content Creation",
+      "Marketing",
+    ],
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "4.8",
+      ratingCount: "50",
+    },
+  };
+
   return (
     <div className="about">
+      <Helmet>
+        <title>About Us | CRAVUE - Creative Strategy Company</title>
+        <meta
+          name="description"
+          content="Learn about Cravue, a creative strategy company helping 150+ startups and growth-stage brands scale through storytelling, brand development, and marketing innovation."
+        />
+        <meta
+          name="keywords"
+          content="about us, creative agency, brand strategy, company, team, mission"
+        />
+        <meta property="og:title" content="About CRAVUE" />
+        <meta
+          property="og:description"
+          content="Creative strategy company helping businesses grow through storytelling and smart solutions. 150+ businesses trust Cravue."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://cravue.com/about" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="About CRAVUE" />
+        <meta
+          name="twitter:description"
+          content="Learn about Cravue and how we help businesses streamline operations and scale faster."
+        />
+        <link rel="canonical" href="https://cravue.com/about" />
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
+      </Helmet>
       <p className="title">About Us</p>
       <h1>Helping Businesses Grow</h1>
       <p>Cravue helps businesses streamline operations and faster.</p>
