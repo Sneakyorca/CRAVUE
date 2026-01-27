@@ -1,3 +1,4 @@
+import { useState } from "react";
 import email from "./../assets/ic_baseline-email.svg";
 import phone from "./../assets/line-md_phone-filled.svg";
 import { Helmet } from "react-helmet-async";
@@ -22,8 +23,9 @@ const Contact = () => {
       url: "https://cravue.com",
     },
   };
-
+  const [loading, setLoading] = useState(false);
   const handlesubmit = async (e) => {
+    setLoading(true);
     e.preventDefault();
     const formData = Object.fromEntries(new FormData(e.target).entries());
 
@@ -74,6 +76,8 @@ const Contact = () => {
       e.target.reset();
     } catch (err) {
       alert(err.message || "Failed to submit form");
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -114,12 +118,16 @@ const Contact = () => {
         Have a question or need solutions? Let’s us know by filling out the
         form, and we’ll be in touch!
       </p>
-      <div className="gradient-background">
+      <a
+        style={{ display: "block", cursor: "pointer" }}
+        href="mailto:cravue@gmail.com"
+        className="gradient-background"
+      >
         <p>
           <img src={email} alt="Email" /> E-mail
         </p>
         <p>cravue@gmail.com</p>
-      </div>
+      </a>
       <div className="gradient-background">
         <p>
           <img src={phone} alt="Phone" /> Phone
@@ -177,7 +185,9 @@ const Contact = () => {
             placeholder="Hi, I am John I need help with..."
           ></textarea>
         </div>
-        <button type="submit">Submit Form</button>
+        <button type="submit" disabled={loading}>
+          {loading ? "Submitting..." : "Submit Form"}
+        </button>
       </form>
     </div>
   );

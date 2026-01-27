@@ -8,7 +8,9 @@ const Footer = () => {
         <span> CRAVUE</span>
       </h2>
       <p>CRAVUE - Precision, Creativity, Value.</p>
-      <p>cravue@gmail.com</p>
+      <a className="cravuelink" href="mailto:cravue@gmail.com">
+        cravue@gmail.com
+      </a>
       <div className="links">
         <div className="social">
           <h3>Social</h3>
