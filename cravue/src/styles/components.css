@@ -171,6 +171,9 @@ footer .links h3 {
   font-size: 11px;
   font-weight: 600;
 }
+.accordion-title .angle-icon {
+  display: none;
+}
 .accordion .accordion-content {
   max-height: 0;
   font-weight: 500;

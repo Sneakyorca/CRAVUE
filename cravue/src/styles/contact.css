@@ -79,7 +79,12 @@
   border-radius: 10px;
   padding: 8px 0;
   width: 100%;
+  cursor: pointer;
+
   border: 3px solid transparent;
+}
+.contact button:hover {
+  background: #2e6399;
 }
 .contact form {
   border: 0.5px solid white;

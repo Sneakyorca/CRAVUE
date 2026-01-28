@@ -118,21 +118,24 @@ const Contact = () => {
         Have a question or need solutions? Let’s us know by filling out the
         form, and we’ll be in touch!
       </p>
-      <a
-        style={{ display: "block", cursor: "pointer" }}
-        href="mailto:cravue@gmail.com"
-        className="gradient-background"
-      >
-        <p>
-          <img src={email} alt="Email" /> E-mail
-        </p>
-        <p>cravue@gmail.com</p>
-      </a>
-      <div className="gradient-background">
-        <p>
-          <img src={phone} alt="Phone" /> Phone
-        </p>
-        <p>+234 567 8900</p>
+      <div className="gradient-cont">
+        {" "}
+        <a
+          style={{ display: "block", cursor: "pointer" }}
+          href="mailto:cravue@gmail.com"
+          className="gradient-background"
+        >
+          <p>
+            <img src={email} alt="Email" /> E-mail
+          </p>
+          <p>cravue@gmail.com</p>
+        </a>
+        <div className="gradient-background">
+          <p>
+            <img src={phone} alt="Phone" /> Phone
+          </p>
+          <p>+234 567 8900</p>
+        </div>
       </div>
       <form id="form" onSubmit={handlesubmit}>
         <div className="fname">

@@ -1,6 +1,4 @@
 @media (min-width: 768px) {
-  /* commented out some hover animations in components css */
-
   /* navbar */
   .nav .nav-items {
     visibility: visible;
@@ -39,7 +37,7 @@
     left: 28%;
     position: absolute;
     background: white;
-    bottom: -2px;
+    bottom: -5px;
     border-radius: 30px;
     transition: all 0.3s ease;
   }
@@ -190,5 +188,165 @@
   }
   .nav-items .contact-button {
     margin-left: 19vw;
+  }
+  .services > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  .services > div img {
+    width: 90%;
+    height: 90%;
+  }
+  .services div div p {
+    font-size: 18px;
+  }
+  .services div .title {
+    position: absolute;
+    top: 0;
+    left: 52%;
+  }
+  .services div div p:first-of-type {
+    margin-bottom: 3%;
+    margin-top: 10%;
+  }
+  .services > div:nth-of-type(2) {
+    direction: rtl;
+  }
+  .services > div:nth-of-type(2) div,
+  .services > div:nth-of-type(2) .title,
+  .services > div:nth-of-type(2) img {
+    direction: ltr;
+  }
+  .services div:nth-of-type(2) .title {
+    position: absolute;
+    top: 9%;
+    left: 0;
+  }
+  .services,
+  .about {
+    margin-top: 20vh;
+  }
+  .services h1,
+  .about h2,
+  .about h1,
+  .blog h1,
+  .article-page h1,
+  .error-404 h1,
+  .contact h1 {
+    font-size: 50px;
+  }
+  .about h2:first-of-type + p {
+    margin-left: 20vw;
+    margin-right: 20vw;
+  }
+  .gradient-cont {
+    display: flex;
+    gap: 20px;
+  }
+  .gradient-background {
+    padding: 23px 20px;
+  }
+  .about > h2:nth-of-type(2),
+  .about > h2:nth-of-type(2) + p {
+    margin-left: 20vw !important;
+    margin-right: 20vw !important;
+  }
+  .card-container {
+    display: flex;
+    gap: 20px;
+  }
+  .card.info {
+    height: 100%;
+  }
+  .about > h2:nth-of-type(3) {
+    margin-left: 15vw !important;
+    margin-right: 15vw !important;
+  }
+  .about > h2:nth-of-type(3) + p {
+    margin-bottom: 30px !important;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .about .card p {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .blog > p {
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+  .article-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .article-card .article {
+    margin-bottom: 0;
+    width: 40vw;
+  }
+  .article-card .article:nth-of-type(2) img {
+    height: 80%;
+  }
+  .article-card .article p {
+    font-size: 22px;
+  }
+  .article-page img.background {
+    display: none;
+  }
+  .article-page h1 {
+    text-align: left;
+  }
+  .article-page h2,
+  .article-page h3 {
+    font-size: 45px;
+    text-align: left;
+  }
+  .article-page h2:last-of-type {
+    font-size: 34px;
+  }
+  .accordion-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .accordion-title .angle-icon {
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  .accordion-title .angle-icon.selected {
+    transform: rotateX(180deg);
+  }
+  .contact {
+    margin-left: 18vw;
+    margin-right: 18vw;
+  }
+  .contact .gradient-background {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .contact form {
+    margin-top: 0;
+  }
+  .contact form input {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  .contact .msg textarea {
+    height: 20vh;
+  }
+}
+@media (min-width: 1100px) {
+  .services div div p:first-of-type {
+    margin-bottom: 3%;
+    margin-top: 7%;
+  }
+  .services div:nth-of-type(2) .title {
+    position: absolute;
+    top: 18%;
+    left: 0;
   }
 }
