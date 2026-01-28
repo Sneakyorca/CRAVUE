@@ -182,7 +182,7 @@
   width: 100%;
 }
 .carousel-slider {
-  animation: carousel 4s linear infinite;
+  animation: carousel 3s linear infinite;
   display: flex;
   gap: 80px;
   width: max-content;
@@ -191,12 +191,13 @@
 .carousel {
   margin-bottom: 50px;
 }
+
 @keyframes carousel {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-53%);
+    transform: translateX(-34.5%);
   }
 }
 #clients .card,

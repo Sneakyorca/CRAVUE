@@ -25,23 +25,39 @@ const Navbar = ({ navState, setNavState }) => {
           </button>
         </ul>
         <div className="nav-items">
-          <li>
+          <li className={`${location.pathname == "/" && "activepage"}`}>
             <Link to="/">Home</Link>
           </li>
-          <li>
+          <li className={`${location.pathname == "/services" && "activepage"}`}>
             <Link to="/services">Service</Link>
           </li>
-          <li>
+          <li className={`${location.pathname == "/about" && "activepage"}`}>
             <Link to="/about">About</Link>
           </li>
-          <li>
+          <li className={`${location.pathname == "/blog" && "activepage"}`}>
             <Link to="/blog">Blog</Link>
           </li>
-          <li>
+          <li className={`${location.pathname == "/contact" && "activepage"}`}>
             <Link to="/contact">Contact</Link>
           </li>
 
-          {location.pathname === "/" ? (
+          {window.innerWidth < 768 ? (
+            location.pathname === "/" ? (
+              <a
+                href="https://tally.so/r/w77g9A"
+                target="_blank"
+                className="contact-button"
+              >
+                <span>Sign Up</span>
+                <img src={arrowup} alt="Arrow Up" />
+              </a>
+            ) : (
+              <Link to="/contact" className="contact-button">
+                <span>Get In Touch</span>
+                <img src={arrowup} alt="Arrow Up" />
+              </Link>
+            )
+          ) : (
             <a
               href="https://tally.so/r/w77g9A"
               target="_blank"
@@ -50,11 +66,6 @@ const Navbar = ({ navState, setNavState }) => {
               <span>Sign Up</span>
               <img src={arrowup} alt="Arrow Up" />
             </a>
-          ) : (
-            <Link to="/contact" className="contact-button">
-              <span>Get In Touch</span>
-              <img src={arrowup} alt="Arrow Up" />
-            </Link>
           )}
         </div>
       </div>

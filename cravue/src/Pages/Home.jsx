@@ -109,26 +109,29 @@ const Home = ({ navState }) => {
       </section>
       <section id="about">
         <h2>About Us</h2>
-        <p>
-          Cravue is a full-service creative strategy company helping startups
-          and growth-stage brands scale through storytelling, content creation,
-          brand development, UGC, influencer marketing, and high-impact visual
-          content. We empower businesses to gain strategic clarity and
-          visibility through powerful creative systems, positioning ourselves
-          not just as an agency but as a scalable company solving deep-rooted
-          marketing and brand positioning problems.
-        </p>
-        <img
-          src={aboutimg}
-          alt="Cravue Creative Team and Studio"
-          width="100%"
-          height={200}
-          style={{
-            objectFit: "cover",
-            objectPosition: "top",
-            borderRadius: "10px",
-          }}
-        />
+        <div>
+          <p>
+            Cravue is a full-service creative strategy company helping startups
+            and growth-stage brands scale through storytelling, content
+            creation, brand development, UGC, influencer marketing, and
+            high-impact visual content. We empower businesses to gain strategic
+            clarity and visibility through powerful creative systems,
+            positioning ourselves not just as an agency but as a scalable
+            company solving deep-rooted marketing and brand positioning
+            problems.
+          </p>
+          <img
+            src={aboutimg}
+            alt="Cravue Creative Team and Studio"
+            width="100%"
+            height={200}
+            style={{
+              objectFit: "cover",
+              objectPosition: "top",
+              borderRadius: "10px",
+            }}
+          />
+        </div>
         <Link to="/about" className="link">
           Read more
         </Link>

@@ -1,0 +1,194 @@
+@media (min-width: 768px) {
+  /* commented out some hover animations in components css */
+
+  /* navbar */
+  .nav .nav-items {
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+    margin: 0;
+    gap: 25px;
+    align-items: center;
+  }
+  .nav-items .contact-button {
+    background: none;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 800;
+    margin-left: 11vw;
+  }
+  .nav-items .contact-button img {
+    display: none;
+  }
+  .nav .nav-items li {
+    margin: 0;
+    position: relative;
+  }
+  .nav .container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav .menu-icon {
+    display: none;
+  }
+  .activepage::before {
+    content: "";
+    width: 50%;
+    height: 2px;
+    left: 28%;
+    position: absolute;
+    background: white;
+    bottom: -2px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+  }
+
+  /* hero */
+
+  #hero {
+    margin: 0;
+    height: 60vh;
+  }
+  #hero h1 {
+    font-size: 30px;
+  }
+  #about div {
+    display: flex;
+    align-items: center;
+  }
+  #about h2 {
+    margin-bottom: 0;
+  }
+  #about div p {
+    margin-bottom: 0;
+  }
+  #about .link {
+    margin-top: 0;
+  }
+  #services .service-cards .service-card {
+    min-width: 80vw;
+    padding: 65px 2vw;
+  }
+  #clients .card,
+  .about .card {
+    width: 80%;
+    padding: 50px 50px;
+    justify-self: center;
+  }
+  footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .copyright {
+    margin: 8px auto;
+    text-align: center;
+  }
+  footer .links {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+@media (min-width: 1024px) {
+  .home {
+    margin: 0 7vw;
+  }
+  #hero {
+    height: 100vh;
+  }
+  #hero h1 {
+    font-size: 48px;
+  }
+  #about {
+    position: relative;
+  }
+  #about div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+  }
+  #about div img {
+    height: 85%;
+    border: 1px solid #2e6399;
+  }
+  #about h2 {
+    position: absolute;
+    top: 10%;
+  }
+  #about .link {
+    position: absolute;
+    bottom: 5%;
+  }
+  #services .service-cards {
+    flex-direction: row;
+    margin-top: 20px;
+  }
+  #services .service-cards .service-card {
+    min-width: 25vw;
+    padding: 60px 1vw;
+  }
+  #faqs .title {
+    background: #2e6399;
+    border: none;
+  }
+  #faqs h1 {
+    font-size: 48px;
+    margin-left: 25vh;
+    margin-right: 25vh;
+  }
+  #faqs > p {
+    font-weight: 400;
+  }
+  #faqs p,
+  .accordion-title {
+    font-size: 18px;
+  }
+  .accordion .accordion-content {
+    font-size: 12px;
+  }
+  .accordion {
+    width: 60vw;
+    justify-self: center;
+  }
+  .accordion-item {
+    margin-bottom: 5px;
+    padding: 10px 8px;
+  }
+  .accordion::before {
+    width: 450px;
+    height: 150px;
+    border-radius: 100px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    background: linear-gradient(22.5deg, #2e6399 60%, #28282880, #000000);
+    filter: blur(15px);
+    top: 18%;
+    left: 60px;
+    z-index: -1;
+    transform: rotate(-15deg);
+  }
+  #clients .card,
+  .about .card {
+    width: 60vw;
+    padding: 60px 6em;
+    justify-self: center;
+    border-radius: 60px;
+  }
+  #clients .card h2,
+  .about .card h2 {
+    font-size: 40px;
+    margin-bottom: 0;
+  }
+  footer {
+    padding-bottom: 30px;
+    padding-right: 100px;
+    padding-left: 80px;
+  }
+  footer .cravuelink {
+    margin-bottom: 0;
+  }
+  .nav-items .contact-button {
+    margin-left: 19vw;
+  }
+}

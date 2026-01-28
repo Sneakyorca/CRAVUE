@@ -10,6 +10,9 @@ const Carousel = () => {
       <img src={slider1} width={155} alt="" />
       <img src={slider2} width={155} alt="" />
       <img src={slider3} width={155} height={100} alt="" />
+      <img src={slider1} width={155} alt="" />
+      <img src={slider2} width={155} alt="" />
+      <img src={slider3} width={155} height={100} alt="" />
     </div>
   );
 };

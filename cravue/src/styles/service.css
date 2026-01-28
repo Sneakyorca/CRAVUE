@@ -9,16 +9,17 @@
 .services p {
   font-size: 21px;
 }
-.services p:nth-child(3),
+.services > p:nth-child(3),
 p.title {
   text-align: center;
   font-size: 18px;
 }
-.services p:nth-child(3) {
+.services > p:nth-child(3) {
   margin-bottom: 35px;
 }
-.services .title:not(.services .title:first-child) {
+.services div .title {
   justify-self: left;
+  text-align: left;
 }
 .services img {
   width: 99%;
@@ -26,9 +27,9 @@ p.title {
   display: flex;
   justify-self: center;
 }
-.services img + p {
+.services div div p:first-of-type {
   margin-bottom: 30px;
 }
-.services img + p + p {
+.services div div p:last-of-type {
   margin-bottom: 30px;
 }

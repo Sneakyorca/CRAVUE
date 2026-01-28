@@ -3,14 +3,16 @@ import logo from "./../../assets/logo.png";
 const Footer = () => {
   return (
     <footer>
-      <h2>
-        <img src={logo} alt="" width="43px" />
-        <span> CRAVUE</span>
-      </h2>
-      <p>CRAVUE - Precision, Creativity, Value.</p>
-      <a className="cravuelink" href="mailto:cravue@gmail.com">
-        cravue@gmail.com
-      </a>
+      <div className="info">
+        <h2>
+          <img src={logo} alt="" width="43px" />
+          <span> CRAVUE</span>
+        </h2>
+        <p>CRAVUE - Precision, Creativity, Value.</p>
+        <a className="cravuelink" href="mailto:cravue@gmail.com">
+          cravue@gmail.com
+        </a>
+      </div>
       <div className="links">
         <div className="social">
           <h3>Social</h3>
@@ -54,6 +56,9 @@ const Footer = () => {
           <ul>
             <li>
               <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/services">Services</Link>
             </li>
             <li>
               <Link to="/about">About</Link>

@@ -33,6 +33,7 @@ function App() {
       </Routes>
 
       <Footer />
+      {window.innerWidth >= 768 && <p className="copyright">copyright</p>}
     </>
   );
 }
