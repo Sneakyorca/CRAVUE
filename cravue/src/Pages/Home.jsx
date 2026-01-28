@@ -45,10 +45,10 @@ const Home = ({ navState }) => {
   return (
     <div className="home">
       <Helmet>
-        <title>CRAVUE - Creative Strategy & Brand Development Agency</title>
+        <title>Cravue — The Brand & Marketing Operating System for Modern Businesses</title>
         <meta
           name="description"
-          content="Cravue: Full-service creative strategy company for startups & growth-stage brands. Storytelling, brand development, content creation, UGC & influencer marketing."
+          content="An all-in-one platform that helps brands define their identity, run campaigns, and scale with clarity."
         />
         <meta
           name="keywords"
@@ -56,22 +56,22 @@ const Home = ({ navState }) => {
         />
         <meta
           property="og:title"
-          content="CRAVUE - Creative Strategy & Brand Development"
+          content="Cravue — The Brand & Marketing Operating System"
         />
         <meta
           property="og:description"
-          content="Transform your brand with strategic storytelling and high-impact creative systems."
+          content="An all-in-one platform that helps brands define their identity, run campaigns, and scale with clarity."
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://cravue.com" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="CRAVUE - Creative Strategy & Brand Development"
+          content="Cravue — Brand & Marketing Operating System"
         />
         <meta
           name="twitter:description"
-          content="Transform your brand with strategic storytelling and high-impact creative systems."
+          content="An all-in-one platform that helps brands define their identity, run campaigns, and scale with clarity."
         />
         <link rel="canonical" href="https://cravue.com" />
         <script type="application/ld+json">

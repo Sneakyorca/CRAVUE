@@ -22,10 +22,10 @@ const Blog = () => {
   return (
     <div className="blog">
       <Helmet>
-        <title>Blog | CRAVUE - Creative Insights & Marketing Strategies</title>
+        <title>Blog | Cravue — Brand & Marketing Insights</title>
         <meta
           name="description"
-          content="Discover latest trends, insights, and strategies for creative brand development, content marketing, and business growth."
+          content="Latest trends, insights, and strategies for brand development, marketing campaigns, and scaling modern businesses with clarity."
         />
         <meta
           name="keywords"
@@ -33,7 +33,7 @@ const Blog = () => {
         />
         <meta
           property="og:title"
-          content="CRAVUE Blog - Creative Insights & Strategies"
+          content="Cravue Blog - Brand & Marketing Insights"
         />
         <meta
           property="og:description"

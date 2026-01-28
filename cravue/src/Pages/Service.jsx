@@ -36,16 +36,16 @@ const Service = () => {
   return (
     <div className="services">
       <Helmet>
-        <title>Services | CRAVUE - Creative Strategy & Brand Solutions</title>
+        <title>Services | Cravue — Brand & Marketing Solutions</title>
         <meta
           name="description"
-          content="CRAVUE Services: Studio (video & content), BrandLab (strategy & design), GrowthLab (marketing & growth). Solutions for brands to scale with clarity."
+          content="Cravue Studio, BrandLab, and GrowthLab: Comprehensive brand development, content creation, and marketing systems for modern businesses."
         />
         <meta
           name="keywords"
           content="creative services, brand development, video production, brand strategy, marketing strategy, content creation"
         />
-        <meta property="og:title" content="Services | CRAVUE" />
+        <meta property="og:title" content="Services | Cravue" />
         <meta
           property="og:description"
           content="Solutions that take your business to the next level. Studio, BrandLab, and GrowthLab services."

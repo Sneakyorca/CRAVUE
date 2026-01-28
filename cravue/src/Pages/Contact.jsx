@@ -85,19 +85,19 @@ const Contact = () => {
     <div className="contact">
       {" "}
       <Helmet>
-        <title>Contact Us | CRAVUE - Get in Touch</title>
+        <title>Contact Us | Cravue — Get in Touch</title>
         <meta
           name="description"
-          content="Contact CRAVUE for creative strategy and brand development services. Reach out via email, phone, or our contact form."
+          content="Contact Cravue for brand development and marketing solutions. Reach out via email, phone, or our contact form."
         />
         <meta
           name="keywords"
           content="contact, get in touch, inquiry, email, phone, support"
         />
-        <meta property="og:title" content="Contact CRAVUE" />
+        <meta property="og:title" content="Contact Cravue" />
         <meta
           property="og:description"
-          content="Get in touch with Cravue for creative strategy and brand development solutions."
+          content="Get in touch with Cravue for brand development and marketing solutions."
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://cravue.com/contact" />

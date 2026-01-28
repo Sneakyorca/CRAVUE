@@ -36,19 +36,19 @@ const About = () => {
   return (
     <div className="about">
       <Helmet>
-        <title>About Us | CRAVUE - Creative Strategy Company</title>
+        <title>About Us | Cravue — Brand & Marketing Operating System</title>
         <meta
           name="description"
-          content="Learn about Cravue, a creative strategy company helping 150+ startups and growth-stage brands scale through storytelling, brand development, and marketing innovation."
+          content="Cravue helps 150+ businesses define their brand identity, run effective campaigns, and scale with clarity through our integrated platform."
         />
         <meta
           name="keywords"
           content="about us, creative agency, brand strategy, company, team, mission"
         />
-        <meta property="og:title" content="About CRAVUE" />
+        <meta property="og:title" content="About Cravue" />
         <meta
           property="og:description"
-          content="Creative strategy company helping businesses grow through storytelling and smart solutions. 150+ businesses trust Cravue."
+          content="Cravue helps 150+ businesses define their brand identity, run effective campaigns, and scale with clarity."
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://cravue.com/about" />
