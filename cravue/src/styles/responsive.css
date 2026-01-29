@@ -78,10 +78,6 @@
     display: flex;
     justify-content: space-between;
   }
-  .copyright {
-    margin: 8px auto;
-    text-align: center;
-  }
   footer .links {
     display: flex;
     flex-direction: row-reverse;
@@ -132,8 +128,8 @@
   }
   #faqs h1 {
     font-size: 48px;
-    margin-left: 25vh;
-    margin-right: 25vh;
+    margin-left: 15vw;
+    margin-right: 15vw;
   }
   #faqs > p {
     font-weight: 400;

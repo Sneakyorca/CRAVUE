@@ -204,3 +204,8 @@ footer .links h3 {
   z-index: -1;
   transform: rotate(-15deg);
 }
+
+.copyright {
+  margin: 8px auto;
+  text-align: center;
+}

@@ -33,7 +33,8 @@ function App() {
       </Routes>
 
       <Footer />
-      {window.innerWidth >= 768 && <p className="copyright">copyright</p>}
+
+      <p className="copyright">© 2026 Cravue. All rights reserved</p>
     </>
   );
 }
