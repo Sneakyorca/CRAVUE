@@ -1,6 +1,6 @@
-import slider1 from "./../../assets/slider1.png";
-import slider2 from "./../../assets/slider2.png";
-import slider3 from "./../../assets/slider3.png";
+import slider1 from "./../../assets/slider1.webp";
+import slider2 from "./../../assets/slider2.webp";
+import slider3 from "./../../assets/slider3.webp";
 const Carousel = () => {
   return (
     <div className="carousel-slider">

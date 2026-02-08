@@ -4,10 +4,10 @@ import Carousel from "./components/Carousel";
 import { Link } from "react-router-dom";
 import ContactCard from "./components/ContactCard";
 import { Helmet } from "react-helmet-async";
-import studio from "./../assets/studio.jpg";
-import brandlab from "./../assets/brandlab.png";
-import growth from "./../assets/growth.png";
-import aboutimg from "./../assets/about.jpg";
+import studio from "./../assets/studio.webp";
+import brandlab from "./../assets/brandlab.webp";
+import growth from "./../assets/growth.webp";
+import aboutimg from "./../assets/about.webp";
 
 const Home = ({ navState }) => {
   const structuredData = {
@@ -16,8 +16,8 @@ const Home = ({ navState }) => {
     name: "Cravue",
     description:
       "Full-service creative strategy company helping startups and growth-stage brands scale through storytelling, content creation, and brand development.",
-    url: "https://cravue.com",
-    logo: "https://cravue.com/src/assets/logo.png",
+    url: "https://crauve.org",
+    logo: "https://crauve.org/src/assets/logo.svg",
     areaServed: "Worldwide",
     knowsAbout: [
       "Creative Strategy",
@@ -45,7 +45,9 @@ const Home = ({ navState }) => {
   return (
     <div className="home">
       <Helmet>
-        <title>Cravue — The Brand & Marketing Operating System for Modern Businesses</title>
+        <title>
+          Cravue — The Brand & Marketing Operating System for Modern Businesses
+        </title>
         <meta
           name="description"
           content="An all-in-one platform that helps brands define their identity, run campaigns, and scale with clarity."
@@ -63,7 +65,7 @@ const Home = ({ navState }) => {
           content="An all-in-one platform that helps brands define their identity, run campaigns, and scale with clarity."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://cravue.com" />
+        <meta property="og:url" content="https://crauve.org" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
@@ -73,7 +75,7 @@ const Home = ({ navState }) => {
           name="twitter:description"
           content="An all-in-one platform that helps brands define their identity, run campaigns, and scale with clarity."
         />
-        <link rel="canonical" href="https://cravue.com" />
+        <link rel="canonical" href="https://crauve.org" />
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>

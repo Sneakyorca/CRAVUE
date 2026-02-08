@@ -12,8 +12,8 @@ const About = () => {
     name: "Cravue",
     description:
       "Creative strategy company helping startups and growth-stage brands scale through storytelling, brand development, and marketing solutions.",
-    url: "https://cravue.com/about",
-    logo: "https://cravue.com/src/assets/logo.png",
+    url: "https://crauve.org/about",
+    logo: "https://crauve.org/src/assets/logo.svg",
     foundingDate: "2024",
     areaServed: "Worldwide",
     sameAs: [
@@ -51,14 +51,14 @@ const About = () => {
           content="Cravue helps 150+ businesses define their brand identity, run effective campaigns, and scale with clarity."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://cravue.com/about" />
+        <meta property="og:url" content="https://crauve.org/about" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="About CRAVUE" />
         <meta
           name="twitter:description"
           content="Learn about Cravue and how we help businesses streamline operations and scale faster."
         />
-        <link rel="canonical" href="https://cravue.com/about" />
+        <link rel="canonical" href="https://crauve.org/about" />
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>

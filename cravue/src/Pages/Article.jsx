@@ -27,13 +27,13 @@ const Article = () => {
       name: "Cravue",
     },
     datePublished: "2025-03-11",
-    image: article.image || "https://cravue.com/src/assets/logo.png",
+    image: article.image || "https://crauve.org/src/assets/logo.svg",
     publisher: {
       "@type": "Organization",
       name: "Cravue",
       logo: {
         "@type": "ImageObject",
-        url: "https://cravue.com/src/assets/logo.png",
+        url: "https://crauve.org/src/assets/logo.svg",
       },
     },
   };
@@ -53,7 +53,7 @@ const Article = () => {
           content={firstParagraph.substring(0, 160)}
         />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content={`https://cravue.com/blog/${id}`} />
+        <meta property="og:url" content={`https://crauve.org/blog/${id}`} />
         <meta property="article:published_time" content="2025-03-11" />
         <meta property="article:author" content="Cravue" />
         <meta name="twitter:card" content="summary_large_image" />
@@ -62,7 +62,7 @@ const Article = () => {
           name="twitter:description"
           content={firstParagraph.substring(0, 160)}
         />
-        <link rel="canonical" href={`https://cravue.com/blog/${id}`} />
+        <link rel="canonical" href={`https://crauve.org/blog/${id}`} />
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>

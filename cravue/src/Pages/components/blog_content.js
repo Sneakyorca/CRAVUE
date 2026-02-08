@@ -1,7 +1,7 @@
-import article1 from "./../../assets/article1.png";
-import article2 from "./../../assets/article2.png";
-import article3 from "./../../assets/article3.png";
-import article4 from "./../../assets/article4.png";
+import article1 from "./../../assets/article1.webp";
+import article2 from "./../../assets/article2.webp";
+import article3 from "./../../assets/article3.webp";
+import article4 from "./../../assets/article4.webp";
 export const blog_content = [
   {
     title: "The Future of CRAVUE: How It’s Changing Business Operations",

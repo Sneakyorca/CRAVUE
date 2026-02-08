@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import logo from "./../../assets/logo.png";
+import logo from "./../../assets/logo.svg";
 import arrowup from "./../../assets/formkit_arrowup.svg";
 import { useEffect } from "react";
 const Navbar = ({ navState, setNavState }) => {
@@ -64,7 +64,6 @@ const Navbar = ({ navState, setNavState }) => {
               className="contact-button"
             >
               <span>Sign Up</span>
-              <img src={arrowup} alt="Arrow Up" />
             </a>
           )}
         </div>

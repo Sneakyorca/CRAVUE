@@ -1,6 +1,6 @@
-import studio from "./../assets/studio.jpg";
-import brandlab from "./../assets/brandlab.png";
-import growth from "./../assets/growth.png";
+import studio from "./../assets/studio.webp";
+import brandlab from "./../assets/brandlab.webp";
+import growth from "./../assets/growth.webp";
 import { Helmet } from "react-helmet-async";
 
 const Service = () => {
@@ -10,7 +10,7 @@ const Service = () => {
     name: "CRAVUE Services",
     description:
       "Creative strategy and brand development services including Studio, BrandLab, and GrowthLab.",
-    url: "https://cravue.com/services",
+    url: "https://crauve.org/services",
     hasOfferingDescription: [
       {
         "@type": "Service",
@@ -51,14 +51,14 @@ const Service = () => {
           content="Solutions that take your business to the next level. Studio, BrandLab, and GrowthLab services."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://cravue.com/services" />
+        <meta property="og:url" content="https://crauve.org/services" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="CRAVUE Services" />
         <meta
           name="twitter:description"
           content="Creative strategy solutions for brands: Studio, BrandLab, GrowthLab."
         />
-        <link rel="canonical" href="https://cravue.com/services" />
+        <link rel="canonical" href="https://crauve.org/services" />
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>

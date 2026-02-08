@@ -10,17 +10,17 @@ const Contact = () => {
     name: "Contact Cravue",
     description:
       "Get in touch with Cravue for creative strategy and brand development services.",
-    url: "https://cravue.com/contact",
+    url: "https://crauve.org/contact",
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "Customer Service",
-      email: "hello@cravue.com",
+      email: "hello@crauve.org",
       availableLanguage: "en",
     },
     organization: {
       "@type": "Organization",
       name: "Cravue",
-      url: "https://cravue.com",
+      url: "https://crauve.org",
     },
   };
   const [loading, setLoading] = useState(false);
@@ -100,14 +100,14 @@ const Contact = () => {
           content="Get in touch with Cravue for brand development and marketing solutions."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://cravue.com/contact" />
+        <meta property="og:url" content="https://crauve.org/contact" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="Contact CRAVUE" />
         <meta
           name="twitter:description"
           content="Have a question? Let's get in touch!"
         />
-        <link rel="canonical" href="https://cravue.com/contact" />
+        <link rel="canonical" href="https://crauve.org/contact" />
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>
