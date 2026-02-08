@@ -4,16 +4,12 @@ Allow: /
 Disallow: /admin
 Disallow: /private
 
-# Sitemaps
 Sitemap: https://crauve.org/sitemap.xml
 
-# Crawl delay (in seconds)
-Crawl-delay: 1
-
-# Rule for Google-specific crawling
+# Google
 User-agent: Googlebot
 Allow: /
 
-# Rule for Bing
+# Bing
 User-agent: Bingbot
 Allow: /
