@@ -40,6 +40,7 @@
 .article-card .article p {
   text-align: left;
   font-weight: 600;
+  margin-top: 10px;
   font-size: 18.44px;
 }
 .article-card .article:hover {
