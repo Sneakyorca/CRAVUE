@@ -36,7 +36,7 @@ const Service = () => {
   return (
     <div className="services">
       <Helmet>
-        <title>Services | Cravue — Brand & Marketing Solutions</title>
+        <title>Services | Cravue - Brand & Marketing Solutions</title>
         <meta
           name="description"
           content="Cravue Studio, BrandLab, and GrowthLab: Comprehensive brand development, content creation, and marketing systems for modern businesses."

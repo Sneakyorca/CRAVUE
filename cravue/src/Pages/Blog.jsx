@@ -22,7 +22,7 @@ const Blog = () => {
   return (
     <div className="blog">
       <Helmet>
-        <title>Blog | Cravue — Brand & Marketing Insights</title>
+        <title>Blog | Cravue - Brand & Marketing Insights</title>
         <meta
           name="description"
           content="Latest trends, insights, and strategies for brand development, marketing campaigns, and scaling modern businesses with clarity."

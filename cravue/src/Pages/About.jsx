@@ -36,7 +36,7 @@ const About = () => {
   return (
     <div className="about">
       <Helmet>
-        <title>About Us | Cravue — Brand & Marketing Operating System</title>
+        <title>About Us | Cravue - Brand & Marketing Operating System</title>
         <meta
           name="description"
           content="Cravue helps 150+ businesses define their brand identity, run effective campaigns, and scale with clarity through our integrated platform."

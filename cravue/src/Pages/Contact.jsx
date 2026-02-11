@@ -85,7 +85,7 @@ const Contact = () => {
     <div className="contact">
       {" "}
       <Helmet>
-        <title>Contact Us | Cravue — Get in Touch</title>
+        <title>Contact Us | Cravue - Get in Touch</title>
         <meta
           name="description"
           content="Contact Cravue for brand development and marketing solutions. Reach out via email, phone, or our contact form."

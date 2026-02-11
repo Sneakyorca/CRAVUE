@@ -260,8 +260,8 @@ div.border {
   padding: 5px;
   background: linear-gradient(
     var(--rotation),
-    #2e6499b7 0%,
-    #2e6399b7 30%,
+    #2e6499 0%,
+    #2e6399 30%,
     black 41%,
     black
   );

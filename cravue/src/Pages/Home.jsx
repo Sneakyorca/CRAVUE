@@ -46,7 +46,7 @@ const Home = ({ navState }) => {
     <div className="home">
       <Helmet>
         <title>
-          Cravue — The Brand & Marketing Operating System for Modern Businesses
+          Cravue - The Brand & Marketing Operating System for Modern Businesses
         </title>
         <meta
           name="description"
@@ -58,7 +58,7 @@ const Home = ({ navState }) => {
         />
         <meta
           property="og:title"
-          content="Cravue — The Brand & Marketing Operating System"
+          content="Cravue - The Brand & Marketing Operating System"
         />
         <meta
           property="og:description"
@@ -69,7 +69,7 @@ const Home = ({ navState }) => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="Cravue — Brand & Marketing Operating System"
+          content="Cravue - Brand & Marketing Operating System"
         />
         <meta
           name="twitter:description"
@@ -85,7 +85,7 @@ const Home = ({ navState }) => {
           <source src={heroAnimation} type="video/mp4" />
         </video> */}
         <p className="display-info">
-          <span>Preview</span> Content will appear here
+          <span>Brand</span> Strategy & insights
         </p>
         <h1>
           Establish brand credibility and clarity for potential clients,
