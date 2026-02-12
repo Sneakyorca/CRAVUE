@@ -130,12 +130,12 @@ const Contact = () => {
           </p>
           <p>cravue@gmail.com</p>
         </a>
-        <div className="gradient-background">
+        <a href="tel:+2349167669175" className="gradient-background">
           <p>
             <img src={phone} alt="Phone" /> Phone
           </p>
-          <p>+234 567 8900</p>
-        </div>
+          <p>+234 916 766 9175</p>
+        </a>
       </div>
       <form id="form" onSubmit={handlesubmit}>
         <div className="fname">
