@@ -24,7 +24,7 @@ It includes service, about, blog, article, and contact pages with SEO metadata a
 ### 1) Install dependencies
 
 ```bash
-cd /tmp/workspace/Sneakyorca/CRAVUE/cravue
+cd cravue
 npm ci
 ```
 
@@ -48,7 +48,7 @@ npm run preview
 
 ## Available Scripts
 
-From `/tmp/workspace/Sneakyorca/CRAVUE/cravue`:
+From `cravue/`:
 
 - `npm run dev` — start local dev server
 - `npm run build` — create production build
